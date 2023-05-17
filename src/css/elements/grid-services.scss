@@ -1,0 +1,5 @@
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, rem(370));
+  gap: rem(40) rem(30)
+}

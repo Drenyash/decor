@@ -1,0 +1,49 @@
+.tabs-list {
+  display: flex;
+  column-gap: rem(30);
+  padding-bottom: rem(5);
+  width: 100%;
+  border-bottom: 1px solid $light;
+  overflow: auto;
+
+  &__item {
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+}
+
+.toggle-tab {
+  span {
+    padding-bottom: rem(5);
+    position: relative;
+    color: $primary;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      content: '';
+      display: flex;
+      width: 100%;
+      height: 2px;
+      background-color: $primary;
+      z-index: 3;
+    }
+  }
+  @include r(1200) {
+    span {
+      position: static;
+      padding: 0;
+      color: black;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .tab__icon {
+    transform: rotate(0);
+  }
+  .tab__header {
+    font-weight: 600;
+  }
+}

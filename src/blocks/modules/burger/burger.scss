@@ -1,0 +1,62 @@
+.burger {
+  position: relative;
+  display: none;
+  flex-shrink: 0;
+  width: rem(25);
+  height: rem(16);
+  cursor: pointer;
+  overflow: hidden;
+
+  @include r(1200) {
+    display: block;
+    width: rem(20);
+    order: -1;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: rem(25);
+    height: rem(2);
+    background-color: $gray;
+    transition: .3s linear;
+  }
+
+  &::after {
+    position: absolute;
+    top: rem(14);
+    left: 0;
+    content: '';
+    display: block;
+    width: rem(25);
+    height: rem(2);
+    background-color: $gray;
+    transition: .3s linear;
+  }
+
+  &__item {
+    position: absolute;
+    top: rem(7);
+    width: rem(25);
+    height: rem(2);
+    background-color: $gray;
+    transition: .3s linear;
+  }
+
+  &--active {
+    .burger__item {
+      top: -3px;
+    }
+    &::before {
+      top: rem(7);
+      transform: rotate(45deg);
+    }
+    &::after {
+      top: rem(7);
+      transform: rotate(-45deg);
+    }
+  }
+}

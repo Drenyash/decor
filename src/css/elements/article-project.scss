@@ -1,0 +1,80 @@
+.article-project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  row-gap: rem(20);
+
+  &__picture {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: rem(370);
+    max-height: rem(250);
+    border-radius: rem(6);
+    overflow: hidden;
+    cursor: pointer;
+    background-color: $primary-light;
+
+    img {
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: rem(10);
+
+    @include r(1200) {
+      .button--basket {
+        display: none;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: rem(10);
+  }
+
+  &__text {
+    font-size: rem(12);
+    line-height: rem(14);
+    color: $gray;
+  }
+
+  &__title {
+    font-weight: 600;
+    color: $black-light;
+    @include r(1200) {
+      font-size: rem(14);
+      line-height: rem(17);
+    }
+  }
+
+  &__edit {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+
+    @include r(1200) {
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+
+  &__icon {
+    fill: none;
+    display: flex;
+    width: rem(30);
+    height: rem(30);
+  }
+}

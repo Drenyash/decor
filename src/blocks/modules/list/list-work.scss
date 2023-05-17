@@ -1,0 +1,22 @@
+.list-work {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.6%;
+  color: $dark;
+  row-gap: rem(30);
+
+  @include r(1200) {
+    margin-top: rem(50);
+  }
+
+  &__title {
+    margin-bottom: rem(13);
+    font-weight: 600;
+    &--primary {
+      margin-bottom: rem(20);
+    }
+  }
+  &__text {
+    font-weight: 500;
+  }
+}

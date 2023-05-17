@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <div class="lk">
+                <div class="title mb-30 mbm-20">Мои проекты</div>
+                <div class="lk__wrapper">
+                    <div class="lk-sidebar">
+                        <nav class="lk-nav">
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-basket"></use>
+                                </svg>
+                                Корзина
+                            </a>
+                            <a href="#" class="lk-nav__item lk-nav__item--active">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                </svg>
+                                Мои проекты
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-orders"></use>
+                                </svg>
+                                Мои заказы
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                                </svg>
+                                Личные данные
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-discount"></use>
+                                </svg>
+                                Бонусная программа
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="lk-content lk-content--blocks">
+                        <a href="#" class="add-project" data-fancybox="product" data-src="#create-project">
+                            <span class="add-project__button">
+                                <svg class="add-project__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                </svg>
+                            </span>
+                            Создать проект
+                        </a>
+                        <div class="lk-content__wrapper lk-content__wrapper--grid">
+                            <div class="lk-grid lk-grid--2">
+                                <div class="lk-grid__item">
+                                    <article class="article-project">
+                                        <div class="article-project__picture">
+                                            <img class="article-catalog__img"
+                                                 src="https://via.placeholder.com/600/92c66"
+                                                 alt="Фото каталога 'Краски'">
+                                            <button class="article-project__edit edit-button">
+                                                <svg class="edit-button__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-pen"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="article-project__footer">
+                                            <div class="article-project__info">
+                                                <p class="article-project__text">3 комнаты</p>
+                                                <h3 class="article-project__title">Квартира ЖК «Тургенев»</h3>
+                                            </div>
+                                            <button class="button button--basket">
+                                                <svg class="button__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="lk-grid__item">
+                                    <article class="article-project">
+                                        <div class="article-project__picture">
+                                            <img class="article-catalog__img"
+                                                 src="https://via.placeholder.com/600/92c66"
+                                                 alt="Фото каталога 'Краски'">
+                                            <button class="article-project__edit edit-button">
+                                                <svg class="edit-button__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-pen"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="article-project__footer">
+                                            <div class="article-project__info">
+                                                <p class="article-project__text">3 комнаты</p>
+                                                <h3 class="article-project__title">Квартира ЖК «Тургенев»</h3>
+                                            </div>
+                                            <button class="button button--basket">
+                                                <svg class="button__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="lk-grid__item">
+                                    <article class="article-project">
+                                        <div class="article-project__picture">
+                                            <img class="article-catalog__img"
+                                                 src="https://via.placeholder.com/600/92c66"
+                                                 alt="Фото каталога 'Краски'">
+                                            <button class="article-project__edit edit-button">
+                                                <svg class="edit-button__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-pen"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="article-project__footer">
+                                            <div class="article-project__info">
+                                                <p class="article-project__text">3 комнаты</p>
+                                                <h3 class="article-project__title">Квартира ЖК «Тургенев»</h3>
+                                            </div>
+                                            <button class="button button--basket">
+                                                <svg class="button__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="lk-grid__item">
+                                    <article class="article-project">
+                                        <div class="article-project__picture">
+                                            <img class="article-catalog__img"
+                                                 src="https://via.placeholder.com/600/92c66"
+                                                 alt="Фото каталога 'Краски'">
+                                            <button class="article-project__edit edit-button">
+                                                <svg class="edit-button__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-pen"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="article-project__footer">
+                                            <div class="article-project__info">
+                                                <p class="article-project__text">3 комнаты</p>
+                                                <h3 class="article-project__title">Квартира ЖК «Тургенев»</h3>
+                                            </div>
+                                            <button class="button button--basket">
+                                                <svg class="button__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <a href="#" class="lk-archive">
+                                <div class="lk-archive__picture">
+                                    <svg class="lk-archive__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-trash2"></use>
+                                    </svg>
+                                </div>
+                                <div class="lk-archive__content">
+                                    <p class="lk-archive__text">12 комнат</p>
+                                    <h3 class="lk-archive__title">Архив</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="modal" id="create-project" data-modal data-touch='false'>
+    <div class="modal__content">
+        <article class="modal-project">
+            <form action="#" class="modal-project__form">
+                <h3 class="title mb-30 mbm-20 title--medium">Создание проекта</h3>
+                <div class="modal-project__content mb-30">
+                    <picture class="modal-project__picture">
+                        <img class="modal-project__img" src="../assets/images/logo-empty.png"
+                             alt="Фото каталога 'Краски'">
+                    </picture>
+                    <div class="modal-project__info">
+                        <p class="modal-project__text">Создайте общий проект и наполните <br/> его объектами или
+                            комнатами </p>
+                        <input class="input" type="text" minlength="3"
+                               placeholder="Название проекта, например, «Квартира №1»">
+                        <label class="button button--icon button--icon--basic">
+                            <input class="hidden" type="file">
+                            <svg class="button__icon button__icon--primary button__icon--medium">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
+                            </svg>
+                            Загрузить обложку
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-project__controls">
+                    <button class="button">Отменить</button>
+                    <button class="button button--field">Создать</button>
+                </div>
+            </form>
+        </article>
+    </div>
+    <div class="modal__close" data-close></div>
+</div>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

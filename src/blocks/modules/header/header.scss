@@ -1,0 +1,41 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &--active {
+    display: none;
+    @include r(1200) {
+      display: block;
+    }
+    .header-body__wrapper {
+      justify-content: flex-start;
+      column-gap: rem(17);
+    }
+    .logo {
+      max-width: rem(145);
+      margin-right: auto;
+      &__icon {
+        width: 100%;
+      }
+    }
+    .close-btn {
+      display: flex;
+    }
+    .burger {
+      display: none;
+    }
+    .header-body__callback {
+      .header-body__icon {
+        display: none;
+      }
+      span {
+        display: block;
+      }
+    }
+    .section--menu {
+      transition: all .2s linear;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

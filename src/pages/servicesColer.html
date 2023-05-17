@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <div class="services-page">
+                <div class="services-page__grid">
+                    <div class="services-page__item services-page__item--info">
+                        <h1 class="title mb-30 mbm-20">Колеровка </h1>
+                        <p class="subtitle">В магазинах Dom Decor представлен широкий ассортимент красок. Но для того,
+                            чтобы выбрать максимально подходящий оттенок или найти краску для завершения уже начатых
+                            работ, рекомендуем воспользоваться услугой колеровки.</p>
+                    </div>
+                    <div class="services-page__item">
+                        <img src="./assets/images/services-coler.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray section--p-100 mb-100 mbm-40">
+        <div class="container">
+            <div class="list list--small">
+                <article class="article-list">
+                    <svg class="article-list__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-pin-big"></use>
+                    </svg>
+                    <div class="text text--primary">
+                        <h3>Преимущества компьютерной колеровки:</h3>
+                        <ul>
+                            <li>
+                                высокое качество и точность цветопередачи;
+                            </li>
+                            <li>
+                                широчайший спектр оттенков;
+                            </li>
+                            <li>
+                                точная дозировка колоранта: компьютерный контроль процесса смешения красок позволяет
+                                свести к минимуму вероятность ошибки в получении нужного тона;
+                            </li>
+                            <li>
+                                быстрый автоматизированный процесс: занимает не более 10 минут.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="section section--feedback mb-100 mbm-50">
+        <div class="container">
+            <div class="feedback">
+                <div class="feedback__wrapper feedback__wrapper--text">
+                    <h2 class="feedback__title">Остались вопросы?</h2>
+                    <p class="feedback__text">Если вам нужна помощь – оставьте свои данные и ваш вопрос, мы свяжемся с
+                        вами в ближайшее время</p>
+                </div>
+                <div class="feedback__wrapper">
+                    <form class="feedback__form form" action="#" method="POST" data-form="1">
+                        <fieldset class="form__wrapper">
+                            <input
+                                    class="input input--fill"
+                                    type="text"
+                                    name="name"
+                                    minlength="3"
+                                    placeholder="Имя"
+                                    required
+                                    data-input="name"
+                            >
+                            <input
+                                    class="input input--fill"
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="Телефон"
+                                    pattern="[0-9]{3}[0-9]{3}[0-9]{5}"
+                                    required
+                                    data-input="phone"
+                            >
+                        </fieldset>
+                        <textarea
+                                class="input input--area input--fill"
+                                name="question"
+                                placeholder="Ваш вопрос"
+                                required
+                                data-input="textarea"
+                        ></textarea>
+                        <fieldset class="form__wrapper form__wrapper-policy">
+                            <button
+                                    type="submit"
+                                    class="form__button button button--middle button--field"
+                                    data-form="submit"
+                            >Отправить
+                            </button>
+                            <div class="form__policy">
+                                <label class="filter-checkbox filter-checkbox--policy">
+                                    <input class="hidden" type="checkbox" name="brand" value="evroplast">
+                                    <span class="checkbox">
+                                            <svg>
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                            </svg>
+                                        </span>
+                                    <span class="filter-checkbox__info">
+                                        Cогласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <p class="form__accepted" data-accept="1"><span>Успешно!</span> ваше сообщение отправлено</p>
+                    </form>
+                </div>
+                <svg class="feedback__icon feedback__icon_orange">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-vector-orange"></use>
+                </svg>
+                <svg class="feedback__icon feedback__icon_blue">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-vector-blue"></use>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section class="section mb-100 mbm-50">
+        <div class="container">
+            <div class="text text--nums text--slim">
+                <h3>Общие правила и отвественность</h3>
+                <ol>
+                    <li>
+                        Доставка приобретённого товара осуществляется до подъезда, дачи или коттеджа – при наличии
+                        путей, предназначенных для грузовых автомобилей. В противном случае доставка товара будет
+                        выполнена максимально близко к месту планируемой выгрузки с учётом ПДД и вероятности повреждения
+                        автомобиля.
+                    </li>
+                    <li>
+                        Доставка осуществляется в выбранный покупателем временной интервал. Время доставки
+                        согласовывается в момент оформления заказа. Покупатель уведомляется по телефону о прибытии
+                        машины за 30 минут до прибытия.
+                    </li>
+                    <li>
+                        Время ожидания покупателя водителем-экспедитором составляет 15 минут. По истечении этого времени
+                        на контактный номер телефона покупателя будет отправлено смс-уведомление о невозможности
+                        произвести доставку в связи с его отсутствием. Покупатель может заказать повторную доставку,
+                        обратившись в магазин, где производилось первичное оформление. В этом случае доставка
+                        покупателем оплачивается повторно.
+                    </li>
+                    <li>
+                        Выгрузка товара осуществляется бесплатно силами продавца.
+                    </li>
+                    <li>
+                        По желанию покупателя водитель-экспедитор может распаковать и показать товар. При возникновении
+                        претензий к качеству и количеству товара, покупателю необходимо сделать соответствующую запись в
+                        акте приёма-передачи. После этого водитель-экспедитор заберёт товар, от которого отказались.
+                        После подписания акта приёма-передачи претензии по товару и его количеству не принимаются.
+                    </li>
+                    <li>
+                        Если при подъёме и переносе товара существует угроза его механического повреждения, то подъём
+                        товара не осуществляется. При этом деньги за доставку и подъём товара не возвращаются. Подъём
+                        товара в подобных условиях возможен в том случае, если покупатель берёт на себя ответственность
+                        за возможные механические повреждения и подтверждает это соответствующей отметкой в акте
+                        приёма-передачи товара.
+                    </li>
+                    <li>
+                        Раскрой и распил товара сотрудниками отдела доставки не осуществляется.
+                    </li>
+                    <li>
+                        В целях безопасности сотрудники не выполняют подъём, перенос и передачу товара:- по пожарным и
+                        приставным лестницам, лестницам без перил;- с выходом на крыши, в шахты лифтов, чердаки,
+                        подвалы, помещения высотой ниже 180 см;- через оконные проёмы, ограждения и преграды, временные
+                        сооружения и инженерные коммуникации;- в условиях недостаточной освещенности, повышенной
+                        задымленности, загазованности, запыленности, а также в непосредственной близости к оголенным
+                        электропроводам.
+                    </li>
+                    <li>
+                        Стоимость доставки зависит от зоны доставки, веса и объема купленного товара.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

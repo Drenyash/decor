@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="120x120" href="./assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+<link rel="manifest" href="./assets/site.webmanifest">
+<link rel="mask-icon" href="./assets/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+    <title>Dom Decor - Мои заказы</title>
+<link href="./css/main.css" rel="stylesheet"></head>
+
+<body class="body" data-body>
+<header class="header" data-header>
+    <section class="section section--top-line">
+        <div class="container">
+            <div class="top-line">
+                <div class="top-line__place">
+                    <div class="select select--place">
+                        <select class="select__wrapper" name="city" id="city">
+                            <option value="Krasnodar">Краснодар</option>
+                            <option value="Pyatigorsk">Пятигорск</option>
+                            <option value="Sochi">Сочи</option>
+                        </select>
+                    </div>
+                    <div class="top-line__open">
+                        <p class="top-line__text">пн-пт: 09:00 – 21:00</p>
+                        <p class="top-line__text">сб-вс: 09:00 – 18:00</p>
+                    </div>
+                </div>
+                <div class="top-line__callback">
+                    <p class="top-line__text top-line__text--bold">
+                        Обратный звонок
+                    </p>
+                    <a class="top-line__link" href="tel:+79991091000">8 (800) 3070 500</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--header">
+        <div class="container">
+            <div class="header-body">
+                <div class="header-body__wrapper">
+                    <a href="/" class="logo">
+                        <img class="logo__icon" src="./assets/images/logo.svg" alt="Логотип">
+                    </a>
+                    <nav class="header-body__nav nav" data-nav>
+                        <button class="nav__link nav__link--menu nav__link--primary" data-catalog-button>
+                            Каталог
+                            <svg class="nav__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                            </svg>
+                        </button>
+                        <a href="#" class="nav__link">Услуги</a>
+                        <a href="#" class="nav__link">Блог</a>
+                        <a href="#" class="nav__link">Контакты</a>
+                    </nav>
+                    <div class="burger" data-burger>
+                        <span class="burger__item"></span>
+                    </div>
+                    <a href="tel:88003070500" class="header-body__callback">
+                        <svg class="header-body__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <span>8 (800) 3070 500</span>
+                    </a>
+                    <button class="close-btn" data-menu-close>
+                        <svg class="close-btn__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-body__wrapper header-body__wrapper--menu" data-header-menu>
+                    <form class="search-box" data-search-box>
+                        <div class="search" data-search>
+                            <svg class="search__icon" data-icon>
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                            </svg>
+                            <input class="search__input" class="search__input" type="text" placeholder="Введите запрос" data-search="input">
+                        </div>
+                        <button class="search-box__button button button--field">Найти</button>
+                        <div class="search-box__close" data-close>
+                            <svg class="search-box__icon search-box__icon--close">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-close"></use>
+                            </svg>
+                        </div>
+                    </form>
+                    <div class="nav-user" data-nav-user>
+                        <a href="#" class="nav-user__item">
+                            <svg class="nav-user__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="nav-user__item nav-user__basket">
+                            <svg class="nav-user__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-basket"></use>
+                            </svg>
+                            <span class="nav-user__counter">22</span>
+                        </a>
+                        <a href="#" class="nav-user__item" data-show="1">
+                            <svg class="nav-user__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-body__dropdown dropdown hide" data-hide="1">
+                        <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">Мои заказы</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">Личные данные</a>
+                            </li>
+                            <li class="dropdown__line"></li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link">Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--category dropdown-header" data-dropdown-header>
+        <div class="section__wrapper" data-category>
+            <div class="container">
+                <div class="search-box mbm-20 desktop-hidden" data-search-box>
+                    <div class="search" data-search>
+                        <svg class="search__icon" data-icon>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                        </svg>
+                        <input class="search__input" type="text" placeholder="Введите запрос" data-search="input">
+                    </div>
+                </div>
+                <div class="category category--dropdown">
+                    <div class="category__wrapper" data-category-wrapper-main>
+                        <div class="category__item" data-category-item>
+                            <a class="category__head" href="#">
+                                <img class="category__icon" src="./assets/sprite/icon-category-lepnina.svg" alt="">
+                                Интерьерная лепнина
+                            </a>
+                            <ul class="category__list" data-category-list>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="link-more" href="#" data-category-link>смотреть все</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category__item" data-category-item>
+                            <a class="category__head" href="#">
+                                <img class="category__icon" src="./assets/sprite/icon-category-facade.svg" alt="">
+                                Фасадная лепнина
+                            </a>
+                            <ul class="category__list" data-category-list>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="link-more" href="#" data-category-link>смотреть все</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category__item" data-category-item>
+                            <a class="category__head" href="#">
+                                <img class="category__icon" src="./assets/sprite/icon-category-wallpaper.svg" alt="">
+                                Обои и фрески
+                            </a>
+                            <ul class="category__list" data-category-list>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="link-more" href="#" data-category-link>смотреть все</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category__item" data-category-item>
+                            <a class="category__head" href="#">
+                                <img class="category__icon" src="./assets/sprite/icon-category-plaster.svg" alt="">
+                                Декоративная штукатурка
+                            </a>
+                            <ul class="category__list" data-category-list>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="link-more" href="#" data-category-link>смотреть все</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category__item" data-category-item>
+                            <a class="category__head" href="#">
+                                <img class="category__icon" src="./assets/sprite/icon-category-dye.svg" alt="">
+                                Краски
+                            </a>
+                            <ul class="category__list" data-category-list>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="link-more" href="#" data-category-link>смотреть все</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category__item" data-category-item>
+                            <a class="category__head" href="#">
+                                <img class="category__icon" src="./assets/sprite/icon-category-carpet.svg" alt="">
+                                Ковры
+                            </a>
+                            <ul class="category__list" data-category-list>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="link-more" href="#" data-category-link>смотреть все</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category__item" data-category-item>
+                            <a class="category__head" href="#">
+                                <img class="category__icon" src="./assets/sprite/icon-category-door.svg" alt="">
+                                Двери
+                            </a>
+                            <ul class="category__list" data-category-list>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="link-more" href="#" data-category-link>смотреть все</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category__item" data-category-item>
+                            <a class="category__head" href="#">
+                                <img class="category__icon" src="./assets/sprite/icon-category-furniture.svg" alt="">
+                                Мебель
+                            </a>
+                            <ul class="category__list" data-category-list>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="link-more" href="#" data-category-link>смотреть все</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category__wrapper category__wrapper--flex" data-category-wrapper-category>
+                        <a href="#" class="link-back" data-category-back>
+                            <svg class="link-back__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                            </svg>
+                            Назад
+                        </a>
+                        <div class="category__item" data-category-item>
+                            <a class="category__head" href="#">
+                                <img class="category__icon" src="./assets/sprite/icon-category-lepnina.svg" alt="">
+                                Интерьерная лепнина
+                            </a>
+                            <ul class="category__list category__list--column" data-category-list>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                                <li>
+                                    <a class="category__link" href="#">Категория</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--dropdown" data-dropdown>
+        <div class="container">
+            <div class="dropdown-search">
+                <h2 class="dropdown-search__title">Вы уже искали</h2>
+                <ul class="dropdown-search__list">
+                    <li class="dropdown-search__item">Карнизы</li>
+                    <li class="dropdown-search__item">Молдинги</li>
+                    <li class="dropdown-search__item">Плинтусы</li>
+                    <li class="dropdown-search__item">Архитравы</li>
+                    <li class="dropdown-search__item">Колонны и полуколонны</li>
+                    <li class="dropdown-search__item">Кессоны и купола</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--menu">
+        <div class="container">
+            <div class="header-menu">
+                <div class="header-menu__top">
+                    <div class="select select--place">
+                        <select class="select__wrapper" name="city" id="city-m">
+                            <option value="Krasnodar">Краснодар</option>
+                            <option value="Pyatigorsk">Пятигорск</option>
+                            <option value="Sochi">Сочи</option>
+                        </select>
+                    </div>
+                    <div class="header-menu__open">
+                        <p class="header-menu__text">пн-пт: 09:00 – 21:00</p>
+                        <p class="header-menu__text">сб-вс: 09:00 – 18:00</p>
+                    </div>
+                </div>
+                <div class="header-menu__nav-user">
+                    <form class="search-box" data-search-box>
+                        <div class="search" data-search>
+                            <svg class="search__icon" data-icon>
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                            </svg>
+                            <input class="search__input" type="text" placeholder="Введите запрос" data-search="input">
+                        </div>
+                    </form>
+                    <div class="nav-user nav-user--mobile" data-nav-user>
+                        <a href="#" class="nav-user__item nav-user__basket">
+                            <svg class="nav-user__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-basket"></use>
+                            </svg>
+                            Корзина
+                        </a>
+                        <a href="#" class="nav-user__item">
+                            <svg class="nav-user__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-orders"></use>
+                            </svg>
+                            Мои проекты
+                        </a>
+                        <a href="#" class="nav-user__item">
+                            <svg class="nav-user__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                            </svg>
+                            Мои заказы
+                        </a>
+                        <a href="#" class="nav-user__item" data-show="1">
+                            <svg class="nav-user__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                            </svg>
+                            Личный кабинет
+                        </a>
+                    </div>
+                </div>
+                <div class="header-menu__nav">
+                    <ul class="nav nav--mobile" data-nav>
+                        <li class="nav__link">
+                            Каталог
+                            <div class="category">
+                                <div class="category__wrapper">
+                                    <div class="category__item" data-category-item>
+                                        <a class="category__head" href="#">
+                                            Интерьерная лепнина
+                                        </a>
+                                        <ul class="category__list" data-category-list>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="link-more" href="#">смотреть все</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="category__item" data-category-item>
+                                        <a class="category__head" href="#">
+                                            Фасадная лепнина
+                                        </a>
+                                        <ul class="category__list" data-category-list>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="link-more" href="#">смотреть все</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="category__item" data-category-item>
+                                        <a class="category__head" href="#">
+                                            Обои и фрески
+                                        </a>
+                                        <ul class="category__list" data-category-list>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="link-more" href="#">смотреть все</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="category__item" data-category-item>
+                                        <a class="category__head" href="#">
+                                            Декоративная штукатурка
+                                        </a>
+                                        <ul class="category__list" data-category-list>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="link-more" href="#">смотреть все</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="category__item" data-category-item>
+                                        <a class="category__head" href="#">
+                                            Краски
+                                        </a>
+                                        <ul class="category__list" data-category-list>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="link-more" href="#">смотреть все</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="category__item" data-category-item>
+                                        <a class="category__head" href="#">
+                                            Ковры
+                                        </a>
+                                        <ul class="category__list" data-category-list>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="link-more" href="#">смотреть все</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="category__item" data-category-item>
+                                        <a class="category__head" href="#">
+                                            Двери
+                                        </a>
+                                        <ul class="category__list" data-category-list>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="link-more" href="#">смотреть все</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="category__item" data-category-item>
+                                        <a class="category__head" href="#">
+                                            Мебель
+                                        </a>
+                                        <ul class="category__list" data-category-list>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="category__link" href="#">Категория</a>
+                                            </li>
+                                            <li>
+                                                <a class="link-more" href="#">смотреть все</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <a href="#" class="nav__link">Услуги</a>
+                        <a href="#" class="nav__link">Блог</a>
+                        <a href="#" class="nav__link">Контакты</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main class="main">
+    <section class="section section--breadcrumbs mbm-40">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="/" class="breadcrumbs__item">Главная</a>
+            <span class="breadcrumbs__item">Каталог</span>
+        </div>
+    </div>
+</section>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <div class="lk">
+                <div class="title mb-30 mbm-20 title--lk">Завершённые заказы</div>
+                <div class="lk__wrapper">
+                    <div class="lk-sidebar">
+                        <nav class="lk-nav">
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-basket"></use>
+                                </svg>
+                                Корзина
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                </svg>
+                                Мои проекты
+                            </a>
+                            <a href="#" class="lk-nav__item lk-nav__item--active">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-orders"></use>
+                                </svg>
+                                Мои заказы
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                                </svg>
+                                Личные данные
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-discount"></use>
+                                </svg>
+                                Бонусная программа
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="lk-content">
+                        <h3 class="lk-title mb-30 mbm-20">У вас еще не было заказов</h3>
+                        <a href="#" class="button button--field">Перейти в каталог</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <section class="section section--footer">
+        <div class="container">
+            <div class="columns mb-50">
+                <div class="columns__col columns__col--3 columns__col--mob-2">
+                    <div class="menu-footer__item">
+                        <h2 class="menu-footer__title">Каталог</h2>
+                        <div class="menu-footer__links">
+                            <a class="menu-footer__link" href="#">Лепнина</a>
+                            <a class="menu-footer__link" href="#">Обои</a>
+                            <a class="menu-footer__link" href="#">Фрески</a>
+                            <a class="menu-footer__link" href="#">Декоративная штукатурка</a>
+                            <a class="menu-footer__link" href="#">Краски</a>
+                            <a class="menu-footer__link" href="#">Ковры</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns__col columns__col--2 columns__col--mob-4">
+                    <div class="menu-footer__item">
+                        <h2 class="menu-footer__title">Каталог</h2>
+                        <div class="menu-footer__links">
+                            <a class="menu-footer__link" href="#">Двери</a>
+                            <a class="menu-footer__link" href="#">Свет</a>
+                            <a class="menu-footer__link" href="#">Лепнина</a>
+                            <a class="menu-footer__link" href="#">Обои</a>
+                            <a class="menu-footer__link" href="#">Фрески</a>
+                            <a class="menu-footer__link" href="#">Краски</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns__col columns__col--3 columns__col--mob-2">
+                    <div class="menu-footer__item">
+                        <h2 class="menu-footer__title">Информация</h2>
+                        <div class="menu-footer__links">
+                            <a class="menu-footer__link" href="#">О Компании</a>
+                            <a class="menu-footer__link" href="#">Блог</a>
+                            <a class="menu-footer__link" href="#">Доставка</a>
+                            <a class="menu-footer__link" href="#">Оплата и возврат</a>
+                            <a class="menu-footer__link" href="#">Бонусная программа</a>
+                            <a class="menu-footer__link" href="#">Гарантия</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns__col columns__col--1 mob-hidden"></div>
+                <div class="columns__col columns__col--3 columns__col--mob-4">
+                    <div class="list-work">
+                        <div class="list-work__item">
+                            <h3 class="list-work__title list-work__title--primary">Режим работы г.Краснодар</h3>
+                            <p class="list-work__text">пн-пт: 09:00 – 21:00</p>
+                            <p class="list-work__text">сб-вс: 09:00 – 18:00</p>
+                        </div>
+                        <div class="list-work__item">
+                            <h3 class="list-work__title">Режим работы г.Сочи</h3>
+                            <p class="list-work__text">пн-вс: 09:00 – 21:00</p>
+                        </div>
+                        <div class="list-work__item">
+                            <h3 class="list-work__title">Режим работы г.Пятигорск</h3>
+                            <p class="list-work__text">пн-пт: 09:00 – 21:00</p>
+                            <p class="list-work__text">сб-вс: выходной</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns mb-40 mbm-20">
+                <div class="columns__col columns__col--3 columns__col--mob-4 mbm-30">
+                    <a href="/" class="logo mb-20">
+                        <img src="./assets/images/logo.svg" alt="Логотип">
+                    </a>
+                    <div class="content-footer__links">
+                        <div class="social mob-hidden social--thin">
+                            <a href="#" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-whats"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-tg"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-viber"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="tel:+79991091000" class="content-footer__phone">8 (800) 3070 500</a>
+                        <a href="mailto:decor@info.ru" class="content-footer__mail">decor@info.ru</a>
+                    </div>
+                </div>
+                <div class="columns__col columns__col--2 columns__col--mob-2 mbm-30">
+                    <div class="social pt-13">
+                        <a href="#" class="social__link">
+                            <svg class="social__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__link">
+                            <svg class="social__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-yt"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__link">
+                            <svg class="social__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-tg"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns__col columns__col--7 columns__col--mob-4">
+                    <div class="content-footer__documents">
+                        <a href="#" class="content-footer__link">Договор оферты для физических лиц</a>
+                        <a href="#" class="content-footer__link content-footer__link--policy">Политика
+                            конфиденциальности</a>
+                        <a href="#" class="content-footer__link">Договор оферты для юридических лиц и ИП</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-30 mbm-20">
+            <div class="columns">
+                <div class="columns__col columns__col--12">
+                    <p class="copyright">
+                        © ООО «ДОМ ДЕКОР», 2023. Все ресурсы сайта decorinfo.ru, включая (но не ограничиваясь) текстовую,
+                        графическую, фотографическую и видео информацию, структуру, дизайн и оформление страниц, товарные
+                        знаки,
+                        доменное имя, фирменное наименование являются объектами авторского права и прав на интеллектуальную
+                        собственность, защищены российским законодательством и международными соглашениями об охране
+                        авторских
+                        прав и интеллектуальной собственности. <a href="#">Читать далее</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<section class="section">
+    <div class="container">
+        <style>
+            .temp {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+                padding: 50px 0;
+            }
+
+            .temp__link {
+                width: 50%;
+                color: inherit;
+                font-size: 16px;
+                text-decoration: underline;
+            }
+
+            .temp__link--new {
+                position: relative;
+                color: #2B7BC6;
+            }
+
+            .temp__link--new::after {
+                position: absolute;
+                top: -15px;
+                left: 0;
+                content: 'new';
+                display: flex;
+                font-size: 12px;
+                color: #F25220;
+            }
+
+            .temp__link:hover {
+                text-decoration: none;
+            }
+        </style>
+        <div class="temp">
+            <a href="./index.html" class="temp__link">Главная</a>
+            <a href="./catalog.html" class="temp__link">Каталог</a>
+            <a href="./download.html" class="temp__link">Загрузки</a>
+            <a href="./contacts.html" class="temp__link temp__link--new">Контакты</a>
+            <a href="./brands.html" class="temp__link temp__link--new">Бренды</a>
+            <a href="./register.html" class="temp__link">Регистрация-главная</a>
+            <a href="./registerUser.html" class="temp__link">Регистрация-пользователь</a>
+            <a href="./registerComp.html" class="temp__link">Регистрация-компания</a>
+            <a href="./login.html" class="temp__link">Логин</a>
+            <a href="./lkRestore.html" class="temp__link">Восстановление доступа</a>
+            <a href="./lkPassResetEmail.html" class="temp__link">Восстановление доступа email</a>
+            <a href="./lkPassReset.html" class="temp__link">Новый пароль</a>
+            <a href="./lkPassResetAccept.html" class="temp__link">Новый пароль - Подтверждение</a>
+            <a href="./lkBasket.html" class="temp__link">Личный кабинет - Корзина</a>
+            <a href="./lkBasketProducts.html" class="temp__link">Личный кабинет - Корзина (Товары)</a>
+            <a href="./lkOrdering.html" class="temp__link temp__link--new">Личный кабинет - Оформление заказа Доставка</a>
+            <a href="./lkOrderingCompany.html" class="temp__link temp__link--new">Личный кабинет - Оформление заказа Доставка (Компания)</a>
+            <a href="./lkOrderingPickup.html" class="temp__link temp__link--new">Личный кабинет - Оформление заказа Самовывоз</a>
+            <a href="./lkBasketAccepted.html" class="temp__link temp__link--new">Личный кабинет - Заказ оформлен</a>
+            <a href="./lkProjects.html" class="temp__link temp__link--new">Личный кабинет - Мои проекты</a>
+            <a href="./lkProjects2.html" class="temp__link temp__link--new">Личный кабинет - Мои проекты (с проектами)</a>
+            <a href="./lkProjectsArchive.html" class="temp__link temp__link--new">Личный кабинет - Мои проекты (Архив)</a>
+            <a href="./lkProjectsPage.html" class="temp__link temp__link--new">Личный кабинет - Страница проекта</a>
+            <a href="./lkProjectsRoom.html" class="temp__link temp__link--new">Личный кабинет - Страница комнаты проекта</a>
+            <a href="./lkOrders.html" class="temp__link">Личный кабинет - Мои заказы</a>
+            <a href="./lkOrdersProjects.html" class="temp__link">Личный кабинет - Мои заказы (С заказами)</a>
+            <a href="./lkOrdersProjectPage.html" class="temp__link">Личный кабинет - Страница заказа</a>
+            <a href="./lkOrdersPayment.html" class="temp__link">Личный кабинет - Оплата заказа</a>
+            <a href="./lkOrdersPaid.html" class="temp__link temp__link--new">Личный кабинет - Заказ оплачен</a>
+            <a href="./lkData.html" class="temp__link temp__link--new">Личный кабинет - Личные данные</a>
+            <a href="./lkDataCompany.html" class="temp__link temp__link--new">Личный кабинет - Личные данные (Компания)</a>
+            <a href="./lkBonus.html" class="temp__link temp__link--new">Личный кабинет - Бонусная программа</a>
+            <a href="./services.html" class="temp__link">Услуги</a>
+            <a href="./servicesTrans.html" class="temp__link">Услуги - Доставка</a>
+            <a href="./servicesColer.html" class="temp__link">Услуги - Колеровка</a>
+            <a href="./productPage.html" class="temp__link">Карточка товара</a>
+            <a href="./about.html" class="temp__link temp__link--new">О компании</a>
+            <a href="./professional.html" class="temp__link temp__link--new">Профессионалы</a>
+            <a href="./blog.html" class="temp__link temp__link--new">Блог</a>
+            <a href="./blogItem.html" class="temp__link temp__link--new">Блог - статья</a>
+            <a href="./blogItemSlider.html" class="temp__link temp__link--new">Блог - статья(Слайдер)</a>
+            <a href="./blogArticle.html" class="temp__link temp__link--new">Блог - статья(Все вариации)</a>
+            <a href="./gallery.html" class="temp__link temp__link--new">Галерея проектов</a>
+        </div>
+    </div>
+</section>
+<script defer src="js/bundle.js"></script></body>
+</html>

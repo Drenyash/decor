@@ -1,0 +1,23 @@
+.article-brand {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(10);
+
+  &__picture {
+    display: flex;
+    border-radius: rem(6);
+    overflow: hidden;
+  }
+
+  &__country {
+    font-weight: 500;
+    font-size: rem(12);
+    line-height: rem(15);
+    color: $gray;
+  }
+
+  &__brand {
+    font-weight: 600;
+    color: $black-light;
+  }
+}

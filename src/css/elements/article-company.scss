@@ -1,0 +1,33 @@
+.article-company {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include hover;
+
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: rem(270);
+    height: 100%;
+    max-height: rem(200);
+    margin-bottom: rem(20);
+    border-radius: rem(6);
+    overflow: hidden;
+    background-color: #fff;
+
+    img {
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    line-height: rem(22);
+    color: $black-light;
+  }
+}

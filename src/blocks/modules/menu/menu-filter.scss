@@ -1,0 +1,40 @@
+.menu-filter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 9999;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(20);
+    background-color: $white;
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: rem(16) rem(20);
+    background-color: #F8F9FD;
+  }
+
+  &__icon {
+    fill: none;
+    display: flex;
+    width: rem(16);
+    height: rem(16);
+    cursor: pointer;
+    stroke: $gray;
+  }
+
+  &--active {
+    display: flex;
+  }
+}

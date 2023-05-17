@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <div class="lk">
+                <a href="#" class="link-back mb-20 desktop-hidden">
+                    <svg class="link-back__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                    Назад
+                </a>
+                <div class="title mb-30 mbm-20 title--lk">Оформление заказа</div>
+                <div class="lk__wrapper">
+                    <div class="lk-sidebar">
+                        <nav class="lk-nav">
+                            <a href="#" class="lk-nav__item lk-nav__item--active">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-basket"></use>
+                                </svg>
+                                Корзина
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                </svg>
+                                Мои проекты
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-orders"></use>
+                                </svg>
+                                Мои заказы
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                                </svg>
+                                Личные данные
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-discount"></use>
+                                </svg>
+                                Бонусная программа
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="lk-content">
+                        <a href="#" class="link-back mb-20 mob-hidden">
+                            <svg class="link-back__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                            </svg>
+                            Назад
+                        </a>
+                        <form class="lk-form lk-form--grid">
+                            <div class="lk-form__content">
+                                <section class="lk-form__section">
+                                    <h3 class="lk-title mb-30 mbm-20">Получатель</h3>
+                                    <fieldset class="lk-form__wrapper mb-60 mbm-30">
+                                        <label class="lk-form__item">
+                                            Фамилия, имя, отчество
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="Иванов Иван Иванович" name="order-name"
+                                                   required>
+                                        </label>
+                                        <label class="lk-form__item">
+                                            Номер телефона
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="+7 (912) 777 77 77" name="order-phone"
+                                                   required>
+                                        </label>
+                                        <label class="lk-form__item">
+                                            Почта
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="gerdan31@gmail.com" name="order-mail"
+                                                   required>
+                                        </label>
+                                    </fieldset>
+                                    <fieldset class="lk-form__wrapper gap-m-10">
+                                        <label class="lk-form__item">
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="Дополнительное контактное лицо (если нужно)" name="order-dop-name"
+                                                   required>
+                                        </label>
+                                        <label class="lk-form__item">
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="Дополнительный телефон" name="order-dop-phone"
+                                                   required>
+                                        </label>
+                                    </fieldset>
+                                </section>
+                                <section class="lk-form__section">
+                                    <h3 class="lk-title mb-30 mbm-20">Способ доставки</h3>
+                                    <fieldset class="lk-form__wrapper mb-40 mbm-20 gap-m-10">
+                                        <div class="lk-form__wrapper mbm-10 gap-m-10">
+                                            <label class="card">
+                                                <input type="radio" class="input input--radio" name="delivery-type"
+                                                       id="delivery" value="delivery">
+                                                <span class="card__info">
+                                                    <span class="card__text card__text--bold">Доставка</span>
+                                                    <span class="card__text">Заберите заказ самостоятельно из магазина или склада DomDecor</span>
+                                                </span>
+                                            </label>
+                                            <label class="card">
+                                                <input type="radio" class="input input--radio" name="delivery-type"
+                                                       id="pickup" value="pickup" checked>
+                                                <span class="card__info">
+                                                    <span class="card__text card__text--bold">Самовывоз</span>
+                                                    <span class="card__text">Заберите заказ самостоятельно из магазина или склада DomDecor</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="lk-form__wrapper lk-form__wrapper--clear">
+                                        <h3 class="lk-title lk-title--small mb-20">Адреса пунктов выдачи</h3>
+                                        <div class="select-custom">
+                                            <select class="select-custom__select">
+                                                <option value="default" disabled selected>Выберите город</option>
+                                                <option value="krasnodar">г.Краснодар</option>
+                                                <option value="moscow">г.Москва</option>
+                                                <option value="belaya-glina">ст.Белая Глина</option>
+                                                <option value="krasnodar">г.Краснодар</option>
+                                                <option value="moscow">г.Москва</option>
+                                                <option value="moscow">г.Москва</option>
+                                                <option value="moscow">г.Москва</option>
+                                            </select>
+                                        </div>
+                                        <div class="lk-form__addresses-list">
+                                            <div class="address address--background" data-address>
+                                                <div class="address__wrapper" data-content>
+                                                    <h3 class="address__title">Салон DomDecor</h3>
+                                                    <ul class="address__list mb-20 mbm-10">
+                                                        <li class="address__item">
+                                                            <svg class="address__icon">
+                                                                <use xlink:href="./assets/sprite/sprite.svg#icon-pin"></use>
+                                                            </svg>
+                                                            г. Краснодар, ул. Бабушкина, 256
+                                                        </li>
+                                                        <li class="address__item">
+                                                            <svg class="address__icon">
+                                                                <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                                            </svg>
+                                                            пн-вс: 09:00 – 21:00; сб-вс: выходной
+                                                        </li>
+                                                        <li class="address__item">
+                                                            <svg class="address__icon">
+                                                                <use xlink:href="./assets/sprite/sprite.svg#icon-phone-outline"></use>
+                                                            </svg>
+                                                            +7 (918) 54-51-56
+                                                        </li>
+                                                    </ul>
+                                                    <button type="button" class="link-more mbm-20" data-show-map>Смотреть на карте</button>
+                                                    <label class="desktop-hidden">
+                                                        <input type="radio" class="hide address__input" name="place" data-address-input>
+                                                        <span class="button address__button">Выбрать</span>
+                                                    </label>
+                                                </div>
+                                                <div class="address__map" data-map>
+                                                    <div style="position:relative;overflow:hidden;"><a
+                                                            href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps"
+                                                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a
+                                                            href="https://yandex.ru/maps/35/krasnodar/house/ulitsa_babushkina_254/Z0EYfwBnS00OQFpvfXx1d39iZA==/?indoorLevel=1&ll=38.978156%2C45.045096&utm_medium=mapframe&utm_source=maps&z=17.09"
+                                                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Бабушкина, 254 —
+                                                        Яндекс Карты</a>
+                                                        <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=38.978156%2C45.045096&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozMzAzODcxMTY1EkTQoNC-0YHRgdC40Y8sINCa0YDQsNGB0L3QvtC00LDRgCwg0YPQu9C40YbQsCDQkdCw0LHRg9GI0LrQuNC90LAsIDI1NCIKDb7oG0IVbC80Qg%2C%2C&z=17.09"
+                                                                width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                                style="position:relative;"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="address address--background" data-address>
+                                                <div class="address__wrapper" data-content>
+                                                    <h3 class="address__title">Салон DomDecor</h3>
+                                                    <ul class="address__list mb-20 mbm-10">
+                                                        <li class="address__item">
+                                                            <svg class="address__icon">
+                                                                <use xlink:href="./assets/sprite/sprite.svg#icon-pin"></use>
+                                                            </svg>
+                                                            г. Краснодар, ул. Бабушкина, 256
+                                                        </li>
+                                                        <li class="address__item">
+                                                            <svg class="address__icon">
+                                                                <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                                            </svg>
+                                                            пн-вс: 09:00 – 21:00; сб-вс: выходной
+                                                        </li>
+                                                        <li class="address__item">
+                                                            <svg class="address__icon">
+                                                                <use xlink:href="./assets/sprite/sprite.svg#icon-phone-outline"></use>
+                                                            </svg>
+                                                            +7 (918) 54-51-56
+                                                        </li>
+                                                    </ul>
+                                                    <button type="button" class="link-more mbm-20" data-show-map>Смотреть на карте</button>
+                                                    <label class="desktop-hidden">
+                                                        <input type="radio" class="hide address__input" name="place" data-address-input>
+                                                        <span class="button address__button">Выбрать</span>
+                                                    </label>
+                                                </div>
+                                                <div class="address__map" data-map>
+                                                    <div style="position:relative;overflow:hidden;"><a
+                                                            href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps"
+                                                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a
+                                                            href="https://yandex.ru/maps/35/krasnodar/house/ulitsa_babushkina_254/Z0EYfwBnS00OQFpvfXx1d39iZA==/?indoorLevel=1&ll=38.978156%2C45.045096&utm_medium=mapframe&utm_source=maps&z=17.09"
+                                                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Бабушкина, 254 —
+                                                        Яндекс Карты</a>
+                                                        <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=38.978156%2C45.045096&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozMzAzODcxMTY1EkTQoNC-0YHRgdC40Y8sINCa0YDQsNGB0L3QvtC00LDRgCwg0YPQu9C40YbQsCDQkdCw0LHRg9GI0LrQuNC90LAsIDI1NCIKDb7oG0IVbC80Qg%2C%2C&z=17.09"
+                                                                width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                                style="position:relative;"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="address address--background" data-address>
+                                                <div class="address__wrapper" data-content>
+                                                    <h3 class="address__title">Салон DomDecor</h3>
+                                                    <ul class="address__list mb-20 mbm-10">
+                                                        <li class="address__item">
+                                                            <svg class="address__icon">
+                                                                <use xlink:href="./assets/sprite/sprite.svg#icon-pin"></use>
+                                                            </svg>
+                                                            г. Краснодар, ул. Бабушкина, 256
+                                                        </li>
+                                                        <li class="address__item">
+                                                            <svg class="address__icon">
+                                                                <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                                            </svg>
+                                                            пн-вс: 09:00 – 21:00; сб-вс: выходной
+                                                        </li>
+                                                        <li class="address__item">
+                                                            <svg class="address__icon">
+                                                                <use xlink:href="./assets/sprite/sprite.svg#icon-phone-outline"></use>
+                                                            </svg>
+                                                            +7 (918) 54-51-56
+                                                        </li>
+                                                    </ul>
+                                                    <button type="button" class="link-more mbm-20" data-show-map>Смотреть на карте</button>
+                                                    <label class="desktop-hidden">
+                                                        <input type="radio" class="hide address__input" name="place" data-address-input>
+                                                        <span class="button address__button">Выбрать</span>
+                                                    </label>
+                                                </div>
+                                                <div class="address__map" data-map>
+                                                    <div style="position:relative;overflow:hidden;"><a
+                                                            href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps"
+                                                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a
+                                                            href="https://yandex.ru/maps/35/krasnodar/house/ulitsa_babushkina_254/Z0EYfwBnS00OQFpvfXx1d39iZA==/?indoorLevel=1&ll=38.978156%2C45.045096&utm_medium=mapframe&utm_source=maps&z=17.09"
+                                                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Бабушкина, 254 —
+                                                        Яндекс Карты</a>
+                                                        <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=38.978156%2C45.045096&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozMzAzODcxMTY1EkTQoNC-0YHRgdC40Y8sINCa0YDQsNGB0L3QvtC00LDRgCwg0YPQu9C40YbQsCDQkdCw0LHRg9GI0LrQuNC90LAsIDI1NCIKDb7oG0IVbC80Qg%2C%2C&z=17.09"
+                                                                width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                                style="position:relative;"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </section>
+                                <section class="lk-form__section">
+                                    <h3 class="lk-title mb-30 mbm-20">Способ оплаты</h3>
+                                    <fieldset class="lk-form__wrapper gap-m-10">
+                                        <label class="card">
+                                            <input type="radio" class="input input--radio" name="payment-type"
+                                                   id="payment-card" value="delivery" checked>
+                                            <span class="card__info">
+                                                <span class="card__text card__text--bold">Банковской картой</span>
+                                                <span class="card__text">Заберите заказ самостоятельно из магазина или склада DomDecor</span>
+                                            </span>
+                                        </label>
+                                        <label class="card">
+                                            <input type="radio" class="input input--radio" name="payment-type"
+                                                   id="payment-qr" value="pickup">
+                                            <span class="card__info">
+                                                <span class="card__text card__text--bold">Оплата по QR-коду</span>
+                                                <span class="card__text">Заберите заказ самостоятельно из магазина или склада DomDecor</span>
+                                            </span>
+                                        </label>
+                                    </fieldset>
+                                </section>
+                                <button class="button button--field mob-hidden" type="submit">Оформить заказ</button>
+                            </div>
+                            <aside class="lk-info mbm-60">
+                                <div class="final-price">
+                                    <div class="final-price__top">
+                                        <div class="final-price__text">
+                                            <p>Всего товаров</p>
+                                            <p class="final-price__count">3 шт</p>
+                                        </div>
+                                        <div class="final-price__text">
+                                            <p class="final-price__text--strong">Сумма</p>
+                                            <div class="price price--right">
+                                                <p class="price__text">3 500<span>₽</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="final-price__bottom">
+                                        <button class="button button--field">Оформить заказ</button>
+                                    </div>
+                                </div>
+                            </aside>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="modal" id="modal" data-modal data-touch='false'>
+    <div class="modal__content">
+        <div class="article-remove">
+            <div class="article-remove__content">
+                <h2 class="title mb-30 mbm-20">Внимание!</h2>
+                <p class="subtitle subtitle--black mb-30">Уверены, что хотите очистить корзину?
+                    Вы можете:</p>
+                <button class="button button--300 button- button--orange mb-20">Отправить в «Мои проекты»</button>
+                <button class="button button--300">Очистить корзину</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal__close" data-close></div>
+</div>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.link-more {
+  font-size: rem(14);
+  line-height: rem(17);
+  color: $primary-opacity;
+  text-decoration: underline;
+  transition: color .2s linear;
+  cursor: pointer;
+
+  &--filter {
+    margin-top: rem(5);
+    font-size: rem(16);
+    font-weight: 600;
+  }
+
+  &--mobile {
+    display: none;
+    @include r(768) {
+      margin-top: rem(20);
+      display: inline-block;
+    }
+  }
+
+  &--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: rem(40) auto 0;
+    padding: rem(10);
+    width: 100%;
+    max-width: rem(250);
+    border: 1px solid $primary;
+    border-radius: rem(6);
+    text-decoration: none;
+    @include r(580) {
+      max-width: 100%;
+    }
+  }
+
+  &:hover {
+    color: $hover;
+  }
+
+  &:active {
+    color: $active;
+  }
+}

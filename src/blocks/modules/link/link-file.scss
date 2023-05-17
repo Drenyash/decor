@@ -1,0 +1,31 @@
+.link-file {
+  display: flex;
+  align-items: center;
+  column-gap: rem(13);
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: rem(48);
+    height: rem(48);
+    fill: $primary;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(8);
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: rem(17);
+    color: #2E2E2E;
+
+    span {
+      text-decoration: underline;
+      color: $primary-opacity;
+    }
+  }
+}

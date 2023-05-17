@@ -1,0 +1,99 @@
+.contacts {
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    column-gap: rem(30);
+
+    @include r(1200) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: rem(20);
+    }
+  }
+
+  &__el {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: rem(570);
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    .title {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__box {
+    display: flex;
+
+    &--row {
+      align-items: center;
+      flex-direction: row;
+      column-gap: rem(14);
+
+      @include r(1200) {
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: rem(18);
+    line-height: rem(22);
+    color: $primary;
+    @include hover;
+    @include r(1200) {
+      align-self: flex-start;
+      font-size: rem(16);
+      line-height: rem(19);
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    column-gap: rem(37);
+    @include r(1200) {
+      flex-direction: column;
+      row-gap: rem(10);
+    }
+  }
+
+  &__body {
+    display: flex;
+    column-gap: rem(30);
+  }
+
+  &__tabs {
+    width: 100%;
+  }
+
+  &__map {
+    display: block;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: rem(570);
+
+    @include r(1200) {
+      max-width: 100%;
+      min-height: rem(344);
+      aspect-ratio: 16/9;
+      div {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 100%;
+      height: rem(614);
+      border: none;
+    }
+  }
+}

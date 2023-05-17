@@ -1,0 +1,47 @@
+.title {
+  font-size: rem(32);
+  line-height: rem(39);
+  font-weight: 700;
+  color: $black;
+
+  @include r(1200) {
+    font-size: rem(24);
+    line-height: rem(29);
+  }
+
+  &--menu {
+    margin: 0;
+    font-size: rem(18);
+    line-height: rem(22);
+  }
+
+  &--medium {
+    font-size: rem(24);
+    line-height: rem(29);
+  }
+  &--small {
+    font-size: rem(18);
+    line-height: rem(22);
+  }
+
+  &--small-m {
+    @include r(1200) {
+      font-size: rem(18);
+      line-height: rem(22);
+    }
+  }
+
+  &--lk {
+    max-width: rem(270);
+    @include r(1200) {
+      max-width: 100%;
+    }
+  }
+
+  &--mobile {
+    @include r(1200) {
+      font-size: rem(18);
+      line-height: rem(22);
+    }
+  }
+}

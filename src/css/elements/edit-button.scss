@@ -1,0 +1,17 @@
+.edit-button {
+  cursor: pointer;
+
+  &:hover {
+    .edit-button__icon {
+      transform: rotate(-46deg);
+      fill: $primary-dark;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: rem(30);
+    height: rem(30);
+    fill: $primary;
+  }
+}

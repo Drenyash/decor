@@ -1,0 +1,71 @@
+.picture {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  img {
+    display: block;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &--slide {
+    flex-shrink: 0;
+    width: rem(564);
+    height: rem(564);
+
+    @include r(1200) {
+      width: rem(238);
+      height: rem(238);
+    }
+  }
+
+  &--full {
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &--intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/employee-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+
+    &__img {
+      width: rem(350);
+      height: rem(400);
+
+      &--full {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &--preview {
+    display: flex;
+    height: rem(400);
+
+    @include r(1200) {
+      height: rem(270);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

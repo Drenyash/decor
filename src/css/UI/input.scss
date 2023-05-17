@@ -1,0 +1,121 @@
+.input {
+  display: inline-block;
+  width: 100%;
+  padding: rem(12) rem(20);
+  line-height: rem(19);
+  font-weight: 500;
+  border: 1px solid $gray-deep;
+  border-radius: rem(6);
+  cursor: auto;
+  transition: .3s linear;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &:focus {
+    border-color: $black-light;
+    opacity: 1;
+  }
+
+  @include r(572) {
+    font-size: rem(14);
+    line-height: rem(17);
+  }
+
+  &--area {
+    min-height: rem(92);
+    &--comment {
+      padding: rem(20);
+      height: 100%;
+    }
+  }
+
+  &--typing {
+    transition: all .2s linear;
+    padding: rem(9) rem(20) rem(9) rem(20);
+  }
+
+  &::placeholder {
+    color: $gray;
+  }
+
+  &--fill {
+    width: 100%;
+  }
+
+  &--light {
+    border-color: $gray;
+  }
+
+  &--check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(14);
+    height: rem(14);
+    border: 1px solid $primary;
+    border-radius: rem(2);
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+
+  &--range {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: rem(18);
+    line-height: rem(20);
+    color: $black-light;
+    border-radius: initial;
+  }
+
+  &--radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0;
+    width: rem(20);
+    height: rem(20);
+    border: 2px solid #CED0D5;
+    border-radius: 50%;
+
+    &:checked {
+      border-color: #000;
+      background-color: #000;
+
+      &::after {
+        display: flex;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: none;
+      width: 8px;
+      height: 8px;
+      background-color: $white;
+      border-radius: 50%;
+    }
+  }
+
+  &--invalid {
+    border-color: $orange;
+  }
+
+  &--valid {
+    border-color: green
+  }
+
+  &--small {
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: rem(17);
+  }
+}
+
+@include r(1200) {
+}

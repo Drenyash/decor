@@ -1,0 +1,12 @@
+.filter {
+  width: 100%;
+  max-width: rem(270);
+
+  &__title {
+    margin-bottom: rem(10);
+    font-size: rem(18);
+    line-height: rem(22);
+    font-weight: 700;
+    color: $black-light;
+  }
+}

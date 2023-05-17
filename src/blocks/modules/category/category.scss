@@ -1,0 +1,108 @@
+.category {
+  width: 100%;
+  background-color: #fff;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: rem(40) 0 rem(60);
+
+    @include r(1200) {
+      grid-template-columns: 1fr;
+      padding-top: 0;
+      padding-bottom: rem(20);
+      width: 100%;
+      gap: 0;
+    }
+
+    &--flex {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    column-gap: rem(10);
+    margin-bottom: rem(20);
+    font-weight: 600;
+    @include r(1200) {
+      margin-bottom: 0;
+      &::after {
+        content: '';
+        display: inline-block;
+        margin-left: auto;
+        width: 10px;
+        height: 10px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNSAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zLjQwNTI0IDUuMTQ2NDVDMy42MDA1IDQuOTUxMTggMy45MTcwOCA0Ljk1MTE4IDQuMTEyMzQgNS4xNDY0NUw3Ljc1ODc5IDguNzkyODlMMTEuNDA1MiA1LjE0NjQ1QzExLjYwMDUgNC45NTExOCAxMS45MTcxIDQuOTUxMTggMTIuMTEyMyA1LjE0NjQ1QzEyLjMwNzYgNS4zNDE3MSAxMi4zMDc2IDUuNjU4MjkgMTIuMTEyMyA1Ljg1MzU1TDguMTEyMzQgOS44NTM1NUM3LjkxNzA4IDEwLjA0ODggNy42MDA1IDEwLjA0ODggNy40MDUyNCA5Ljg1MzU1TDMuNDA1MjQgNS44NTM1NUMzLjIwOTk3IDUuNjU4MjkgMy4yMDk5NyA1LjM0MTcxIDMuNDA1MjQgNS4xNDY0NVoiIGZpbGw9IiMzMzMzMzMiLz4KPC9zdmc+Cg==);
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    row-gap: rem(12);
+    @include r(1200) {
+      display: none;
+    }
+
+    &--column {
+      width: 100%;
+      max-height: 150px;
+      flex-wrap: wrap;
+      column-gap: 30px;
+
+      @include r(1200) {
+        flex-wrap: nowrap;
+        max-height: initial;
+      }
+
+      li {
+        min-width: 270px;
+      }
+    }
+  }
+
+  &__item {
+    @include r(1200) {
+      padding: rem(10) 0;
+      &:not(:last-child) {
+        border-bottom: 1px solid $light;
+      }
+    }
+  }
+
+  &__item--toggle {
+    @include r(1200) {
+      .category__head {
+        margin-bottom: 15px;
+
+        &::after {
+          transform: rotate(0);
+        }
+      }
+
+      .category__list {
+        display: flex;
+      }
+    }
+  }
+
+  &__link {
+    @include hover;
+  }
+}

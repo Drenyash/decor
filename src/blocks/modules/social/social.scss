@@ -1,0 +1,51 @@
+.social {
+  display: flex;
+  align-items: center;
+  column-gap: rem(30);
+
+  &--small {
+    column-gap: 0;
+
+    .social__icon {
+      width: 18px;
+      height: 18px;
+    }
+
+    .social__link {
+      padding: 2.5px;
+    }
+  }
+
+  &--thin {
+    column-gap: 0;
+
+    .social__icon {
+      width: 14px;
+      height: 14px;
+    }
+
+    .social__link {
+      padding: 2.5px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      opacity: .5;
+    }
+
+    @include r(1200) {
+      padding: rem(10) 0;
+    }
+  }
+
+  &__icon {
+    fill: none;
+    width: rem(26);
+    height: rem(18);
+  }
+}

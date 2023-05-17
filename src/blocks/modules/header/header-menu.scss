@@ -1,0 +1,27 @@
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(20);
+  padding-bottom: 50px;
+  height: 100%;
+  max-height: 84%;
+  overflow-y: auto;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav-user {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+  }
+  &__text {
+    @include r(1200) {
+      font-size: rem(14);
+      line-height: rem(22);
+    }
+  }
+}

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <h1 class="title mb-30 mbm-20">Загрузки</h1>
+            <div class="columns">
+                <div class="columns__col columns__col--9">
+                    <div class="tabs mb-60">
+                        <div class="tabs__header">
+                            <ul class="tabs-list">
+                                <li class="tabs-list__item toggle-tab" data-tab="1">
+                                    <span>Все</span>
+                                </li>
+                                <li class="tabs-list__item" data-tab="2">
+                                    <span>Технические условия</span>
+                                </li>
+                                <li class="tabs-list__item" data-tab="3">
+                                    <span>Руководства по эксплуатации</span>
+                                </li>
+                                <li class="tabs-list__item" data-tab="4">
+                                    <span>Прайс-листы</span>
+                                </li>
+                                <li class="tabs-list__item" data-tab="5">
+                                    <span>Прочее</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="tabs__element">
+                                <div class="table">
+                                    <div class="table__header">
+                                        <div class="table__el table__el--30">
+                                            <p class="table__text table__text--bold">Фирма</p>
+                                        </div>
+                                        <div class="table__el table__el--70">
+                                            <p class="table__text table__text--bold">Название файла</p>
+                                        </div>
+                                    </div>
+                                    <div class="table__body active--visible" data-content="1">
+                                        <div class="table__wrapper">
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                        </div>
+                                        <%= htmlWebpackPlugin.options.pagination %>
+                                    </div>
+                                    <div class="table__body hide" data-content="2">
+                                        <div class="table__wrapper">
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                        </div>
+                                        <%= htmlWebpackPlugin.options.pagination %>
+                                    </div>
+                                    <div class="table__body hide" data-content="3">
+                                        <div class="table__wrapper">
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                        </div>
+                                        <%= htmlWebpackPlugin.options.pagination %>
+                                    </div>
+                                    <div class="table__body hide" data-content="4">
+                                        <div class="table__wrapper">
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__el--full-m table__title">Название</p>
+                                                <p class="table__el--40 table__el--full-m table__text">Правила
+                                                    эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                        </div>
+                                        <%= htmlWebpackPlugin.options.pagination %>
+                                    </div>
+                                    <div class="table__body hide" data-content="5">
+                                        <div class="table__wrapper">
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__title">Название</p>
+                                                <p class="table__el--40 table__text">Правила эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__title">Название</p>
+                                                <p class="table__el--40 table__text">Правила эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                            <div class="table__row">
+                                                <p class="table__el--30 table__title">Название</p>
+                                                <p class="table__el--40 table__text">Правила эксплуатации и гарантии на
+                                                    товар</p>
+                                                <a class="table__el--30 table__el--full-m table__link">Скачать <span
+                                                        class="table__size">342,4 КБ</span></a>
+                                            </div>
+                                        </div>
+                                        <%= htmlWebpackPlugin.options.pagination %>
+                                    </div>
+                                    <div class="loader" data-loader></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="columns__col columns__col--9">
+                    <article class="preview preview--primary">
+                        <div class="preview__content">
+                            <h2 class="preview__title">Акция</h2>
+                            <p class="preview__desc">Декоративная штукатурка Goldshell со скидкой 20% до 15
+                                марта</p>
+                            <button class="button button--slim button--field">Подробнее</button>
+                        </div>
+                        <picture class="preview__picture">
+                            <img src="./assets/images/promo-1.png" alt="">
+                        </picture>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <section class="section section--footer">
+        <div class="container">
+            <div class="columns mb-50">
+                <div class="columns__col columns__col--3 columns__col--mob-2">
+                    <div class="menu-footer__item">
+                        <h2 class="menu-footer__title">Каталог</h2>
+                        <div class="menu-footer__links">
+                            <a class="menu-footer__link" href="#">Лепнина</a>
+                            <a class="menu-footer__link" href="#">Обои</a>
+                            <a class="menu-footer__link" href="#">Фрески</a>
+                            <a class="menu-footer__link" href="#">Декоративная штукатурка</a>
+                            <a class="menu-footer__link" href="#">Краски</a>
+                            <a class="menu-footer__link" href="#">Ковры</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns__col columns__col--2 columns__col--mob-4">
+                    <div class="menu-footer__item">
+                        <h2 class="menu-footer__title">Каталог</h2>
+                        <div class="menu-footer__links">
+                            <a class="menu-footer__link" href="#">Двери</a>
+                            <a class="menu-footer__link" href="#">Свет</a>
+                            <a class="menu-footer__link" href="#">Лепнина</a>
+                            <a class="menu-footer__link" href="#">Обои</a>
+                            <a class="menu-footer__link" href="#">Фрески</a>
+                            <a class="menu-footer__link" href="#">Краски</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns__col columns__col--3 columns__col--mob-2">
+                    <div class="menu-footer__item">
+                        <h2 class="menu-footer__title">Информация</h2>
+                        <div class="menu-footer__links">
+                            <a class="menu-footer__link" href="#">О Компании</a>
+                            <a class="menu-footer__link" href="#">Блог</a>
+                            <a class="menu-footer__link" href="#">Доставка</a>
+                            <a class="menu-footer__link" href="#">Оплата и возврат</a>
+                            <a class="menu-footer__link" href="#">Бонусная программа</a>
+                            <a class="menu-footer__link" href="#">Гарантия</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns__col columns__col--1 mob-hidden"></div>
+                <div class="columns__col columns__col--3 columns__col--mob-4">
+                    <div class="list-work">
+                        <div class="list-work__item">
+                            <h3 class="list-work__title list-work__title--primary">Режим работы г.Краснодар</h3>
+                            <p class="list-work__text">пн-пт: 09:00 – 21:00</p>
+                            <p class="list-work__text">сб-вс: 09:00 – 18:00</p>
+                        </div>
+                        <div class="list-work__item">
+                            <h3 class="list-work__title">Режим работы г.Сочи</h3>
+                            <p class="list-work__text">пн-вс: 09:00 – 21:00</p>
+                        </div>
+                        <div class="list-work__item">
+                            <h3 class="list-work__title">Режим работы г.Пятигорск</h3>
+                            <p class="list-work__text">пн-пт: 09:00 – 21:00</p>
+                            <p class="list-work__text">сб-вс: выходной</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns mb-40 mbm-20">
+                <div class="columns__col columns__col--3 columns__col--mob-4 mbm-30">
+                    <a href="/" class="logo mb-20">
+                        <img src="./assets/images/logo.svg" alt="Логотип">
+                    </a>
+                    <div class="content-footer__links">
+                        <div class="social mob-hidden social--thin">
+                            <a href="#" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-whats"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-tg"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-viber"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="tel:+79991091000" class="content-footer__phone">8 (800) 3070 500</a>
+                        <a href="mailto:decor@info.ru" class="content-footer__mail">decor@info.ru</a>
+                    </div>
+                </div>
+                <div class="columns__col columns__col--2 columns__col--mob-2 mbm-30">
+                    <div class="social pt-13">
+                        <a href="#" class="social__link">
+                            <svg class="social__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__link">
+                            <svg class="social__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-yt"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__link">
+                            <svg class="social__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-tg"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns__col columns__col--7 columns__col--mob-4">
+                    <div class="content-footer__documents">
+                        <a href="#" class="content-footer__link">Договор оферты для физических лиц</a>
+                        <a href="#" class="content-footer__link content-footer__link--policy">Политика
+                            конфиденциальности</a>
+                        <a href="#" class="content-footer__link">Договор оферты для юридических лиц и ИП</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-30 mbm-20">
+            <div class="columns">
+                <div class="columns__col columns__col--12">
+                    <p class="copyright">
+                        © ООО «ДОМ ДЕКОР», 2023. Все ресурсы сайта decorinfo.ru, включая (но не ограничиваясь) текстовую,
+                        графическую, фотографическую и видео информацию, структуру, дизайн и оформление страниц, товарные
+                        знаки,
+                        доменное имя, фирменное наименование являются объектами авторского права и прав на интеллектуальную
+                        собственность, защищены российским законодательством и международными соглашениями об охране
+                        авторских
+                        прав и интеллектуальной собственности. <a href="#">Читать далее</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

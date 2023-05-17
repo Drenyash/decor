@@ -1,0 +1,74 @@
+.price {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  &--right {
+    text-align: right;
+  }
+
+  &--row {
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: rem(14);
+    @include r(1200) {
+      justify-content: space-between;
+      column-gap: rem(5);
+    }
+  }
+
+  &__text {
+    word-break: break-word;
+    font-size: rem(24);
+    font-weight: 700;
+    &--small-m {
+      @include r(1200) {
+        font-size: rem(18);
+      }
+    }
+    &--small {
+      font-size: rem(18);
+      line-height: rem(22);
+    }
+    @include r(768) {
+      font-size: rem(18);
+    }
+
+    &--old {
+      position: relative;
+      display: inline-block;
+      font-size: rem(16);
+      line-height: rem(16);
+      font-weight: 600;
+      color: $gray;
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: rem(1);
+        background-color: $orange;
+        transform: translate3d(0, -50%, 0) rotate(10deg);
+      }
+
+      @include r(1200) {
+        font-size: rem(14);
+      }
+    }
+
+    &--black {
+      color: $black-dark;
+    }
+  }
+
+  span {
+    margin-left: rem(5);
+    font-size: rem(16);
+  }
+
+  &--black {
+    color: $black-dark;
+  }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <div class="lk">
+                <div class="title mb-30">Личные данные</div>
+                <div class="lk__wrapper">
+                    <div class="lk-sidebar">
+                        <nav class="lk-nav">
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-basket"></use>
+                                </svg>
+                                Корзина
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                </svg>
+                                Мои проекты
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-orders"></use>
+                                </svg>
+                                Мои заказы
+                            </a>
+                            <a href="#" class="lk-nav__item lk-nav__item--active">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                                </svg>
+                                Личные данные
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-discount"></use>
+                                </svg>
+                                Бонусная программа
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="lk-content">
+                        <div class="lk-content__elements mb-60 mbm-40">
+                            <div class="lk-content__item">
+                                <h3 class="lk-title mb-30 mbm-20">Данные о компании</h3>
+                                <form class="lk-form mbm-40 mbm-20">
+                                    <fieldset class="lk-form__wrapper mb-20 mbm-10">
+                                        <label class="lk-form__item">
+                                            Название организации
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="ИП Гопонинко" name="lk-company-name"
+                                                   required>
+                                        </label>
+                                        <label class="lk-form__item">
+                                            ИНН
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="2369728258" name="lk-company-inn"
+                                                   required>
+                                        </label>
+                                        <label class="lk-form__item">
+                                            КПП
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="758997178" name="lk-company-kpp"
+                                                   required>
+                                        </label>
+                                        <label class="lk-form__item">
+                                            ОКПО
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="6569831500004565" name="lk-company-okpo"
+                                                   required>
+                                        </label>
+                                        <label class="lk-form__item">
+                                            Юридический адрес организации:
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="360065, Краснодар, ул. Гидростроителей, д. 59/2"
+                                                   name="lk-company-address"
+                                                   required>
+                                        </label>
+                                    </fieldset>
+                                    <div class="lk-form__tooltip">
+                                        <button type="button" class="button button--icon">
+                                            <svg class="button__icon button__icon--primary button__icon--small">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                            </svg>
+                                            Добавить организацию
+                                        </button>
+                                        <button type="button" class="button button--right button--basket">
+                                            <svg class="button__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="lk-content__item">
+                                <h3 class="lk-title mb-30 mbm-20">Личные данные представителя</h3>
+                                <form class="lk-form">
+                                    <label class="lk-form__item">
+                                        Фамилия, имя, отчество
+                                        <input type="text" class="input input--light" minlength="3"
+                                               value="Иванов Иван Иванович" name="lk-company-user-name"
+                                               required>
+                                    </label>
+                                    <label class="lk-form__item">
+                                        Номер телефона
+                                        <input type="text" class="input input--light" minlength="3"
+                                               value="+7 (912) 777 77 77" name="lk-company-user-phone"
+                                               required>
+                                    </label>
+                                    <label class="lk-form__item">
+                                        Почта
+                                        <input type="text" class="input input--light" minlength="3"
+                                               value="gerdan31@gmail.com" name="lk-company-user-mail"
+                                               required>
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="lk-content__item">
+                                <h3 class="lk-title mb-30 mbm-20">Адрес доставки</h3>
+                                <form class="lk-form mbm-40 mbm-20">
+                                    <p class="lk-form__text lk-form__text--strong">Адрес №1</p>
+                                    <fieldset class="lk-form__wrapper mb-20 mbm-10">
+                                        <label class="lk-form__item">
+                                            Город
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="Иванов Иван Иванович" name="lk-company-city-1"
+                                                   required>
+                                        </label>
+                                        <label class="lk-form__item">
+                                            Адрес
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="+7 (912) 777 77 77" name="lk-company-address-1"
+                                                   required>
+                                        </label>
+                                        <fieldset class="lk-form__wrapper lk-form__wrapper--grid">
+                                            <label class="lk-form__item">
+                                                Дом, квартира
+                                                <input type="text" class="input input--light" minlength="3"
+                                                       value="59/2" name="lk-company-home-1"
+                                                       required>
+                                            </label>
+                                            <label class="lk-form__item">
+                                                Индекс
+                                                <input type="text" class="input input--light" minlength="3"
+                                                       value="350056" name="lk-company-index-1"
+                                                       required>
+                                            </label>
+                                        </fieldset>
+                                    </fieldset>
+                                    <div class="lk-form__tooltip">
+                                        <button type="button" class="button button--right button--basket">
+                                            <svg class="button__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                                <form class="lk-form">
+                                    <p class="lk-form__text lk-form__text--strong">Адрес №2</p>
+                                    <fieldset class="lk-form__wrapper mb-20 mbm-10">
+                                        <label class="lk-form__item">
+                                            Город
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="Иванов Иван Иванович" name="lk-company-city-2"
+                                                   required>
+                                        </label>
+                                        <label class="lk-form__item">
+                                            Адрес
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="+7 (912) 777 77 77" name="lk-company-address-2"
+                                                   required>
+                                        </label>
+                                        <fieldset class="lk-form__wrapper lk-form__wrapper--grid">
+                                            <label class="lk-form__item">
+                                                Дом, квартира
+                                                <input type="text" class="input input--light" minlength="3"
+                                                       value="59/2" name="lk-company-home-2"
+                                                       required>
+                                            </label>
+                                            <label class="lk-form__item">
+                                                Индекс
+                                                <input type="text" class="input input--light" minlength="3"
+                                                       value="350056" name="lk-company-index-2"
+                                                       required>
+                                            </label>
+                                        </fieldset>
+                                    </fieldset>
+                                    <div class="lk-form__tooltip">
+                                        <button type="button" class="button button--icon">
+                                            <svg class="button__icon button__icon--primary button__icon--small">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                            </svg>
+                                            Добавить адрес
+                                        </button>
+                                        <button type="button" class="button button--basket">
+                                            <svg class="button__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <button class="button button--field">Сменить пароль</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.short-title {
+  font-size: rem(16);
+  line-height: rem(19);
+  font-weight: 500;
+  flex-shrink: 0;
+
+  &--primary {
+    color: $active;
+  }
+}

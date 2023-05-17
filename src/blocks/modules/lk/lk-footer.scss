@@ -1,0 +1,17 @@
+.lk-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  column-gap: 50px;
+  width: 100%;
+
+  @include r(1200) {
+    flex-direction: column;
+    row-gap: rem(40);
+  }
+
+  .final-price {
+    max-width: rem(370);
+  }
+}

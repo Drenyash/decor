@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <div class="lk">
+                <a href="#" class="link-back mb-20 desktop-hidden">
+                    <svg class="link-back__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                    Назад
+                </a>
+                <div class="title mb-30 mbm-20 title--lk">Оформление заказа</div>
+                <div class="lk__wrapper">
+                    <div class="lk-sidebar">
+                        <nav class="lk-nav">
+                            <a href="#" class="lk-nav__item lk-nav__item--active">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-basket"></use>
+                                </svg>
+                                Корзина
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                </svg>
+                                Мои проекты
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-orders"></use>
+                                </svg>
+                                Мои заказы
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                                </svg>
+                                Личные данные
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-discount"></use>
+                                </svg>
+                                Бонусная программа
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="lk-content">
+                        <a href="#" class="link-back mb-20 mob-hidden">
+                            <svg class="link-back__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                            </svg>
+                            Назад
+                        </a>
+                        <form class="lk-form lk-form--grid">
+                            <div class="lk-form__content">
+                                <section class="lk-form__section">
+                                    <h3 class="lk-title mb-30 mbm-20">Получатель</h3>
+                                    <fieldset class="lk-form__wrapper mb-60 mbm-30">
+                                        <label class="lk-form__item">
+                                            Фамилия, имя, отчество
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="Иванов Иван Иванович" name="order-name"
+                                                   required>
+                                        </label>
+                                        <label class="lk-form__item">
+                                            Номер телефона
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="+7 (912) 777 77 77" name="order-phone"
+                                                   required>
+                                        </label>
+                                        <label class="lk-form__item">
+                                            Почта
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="gerdan31@gmail.com" name="order-mail"
+                                                   required>
+                                        </label>
+                                    </fieldset>
+                                    <fieldset class="lk-form__wrapper gap-m-10">
+                                        <label class="lk-form__item">
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="Дополнительное контактное лицо (если нужно)" name="order-dop-name"
+                                                   required>
+                                        </label>
+                                        <label class="lk-form__item">
+                                            <input type="text" class="input input--light" minlength="3"
+                                                   value="Дополнительный телефон" name="order-dop-phone"
+                                                   required>
+                                        </label>
+                                    </fieldset>
+                                </section>
+                                <section class="lk-form__section">
+                                    <h3 class="lk-title mb-30 mbm-20">Данные о компании</h3>
+                                    <fieldset class="lk-form__wrapper">
+                                        <fieldset class="lk-form__wrapper mb-20">
+                                            <label class="lk-form__item">
+                                                Название организации
+                                                <input type="text" class="input input--light" minlength="3"
+                                                       value="ИП Гопонинко" name="order-company-name"
+                                                       required>
+                                            </label>
+                                            <label class="lk-form__item">
+                                                ИНН
+                                                <input type="text" class="input input--light" minlength="3"
+                                                       value="2369728258" name="order-company-inn"
+                                                       required>
+                                            </label>
+                                            <label class="lk-form__item">
+                                                КПП
+                                                <input type="text" class="input input--light" minlength="3"
+                                                       value="758997178" name="order-company-kpp"
+                                                       required>
+                                            </label>
+                                            <label class="lk-form__item">
+                                                ОКПО
+                                                <input type="text" class="input input--light" minlength="3"
+                                                       value="6569831500004565" name="order-company-okpo"
+                                                       required>
+                                            </label>
+                                            <label class="lk-form__item">
+                                                Юридический адрес организации:
+                                                <input type="text" class="input input--light" minlength="3"
+                                                       value="360065, Краснодар, ул. Гидростроителей, д. 59/2"
+                                                       name="order-company-address"
+                                                       required>
+                                            </label>
+                                        </fieldset>
+                                        <div class="lk-form__tooltip">
+                                            <button type="button" class="button button--icon">
+                                                <svg class="button__icon button__icon--primary button__icon--small">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                                </svg>
+                                                Добавить организацию
+                                            </button>
+                                            <button type="button" class="button button--basket">
+                                                <svg class="button__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </fieldset>
+                                </section>
+                                <section class="lk-form__section">
+                                    <h3 class="lk-title mb-30 mbm-20">Способ доставки</h3>
+                                    <fieldset class="lk-form__wrapper mb-40 mbm-20 gap-m-10">
+                                        <div class="lk-form__wrapper mbm-10 gap-m-10">
+                                            <label class="card">
+                                                <input type="radio" class="input input--radio" name="delivery-type"
+                                                       id="delivery" value="delivery" checked>
+                                                <span class="card__info">
+                                                    <span class="card__text card__text--bold">Доставка</span>
+                                                    <span class="card__text">Заберите заказ самостоятельно из магазина или склада DomDecor</span>
+                                                </span>
+                                            </label>
+                                            <label class="card">
+                                                <input type="radio" class="input input--radio" name="delivery-type"
+                                                       id="pickup" value="pickup">
+                                                <span class="card__info">
+                                                    <span class="card__text card__text--bold">Самовывоз</span>
+                                                    <span class="card__text">Заберите заказ самостоятельно из магазина или склада DomDecor</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="lk-form__wrapper">
+                                        <h3 class="lk-title mb-10 mbm-10">Адрес доставки</h3>
+                                        <div class="select-custom">
+                                            <select class="select-custom__select">
+                                                <option value="addr-1" selected>Адрес №1</option>
+                                                <option value="addr-2">Адрес №2</option>
+                                                <option value="addr-3">Адрес №3</option>
+                                            </select>
+                                        </div>
+                                        <fieldset class="lk-form__wrapper mb-60">
+                                            <fieldset class="lk-form__wrapper mb-20">
+                                                <label class="lk-form__item">
+                                                    Город
+                                                    <input type="text" class="input input--light" minlength="3"
+                                                           value="Иванов Иван Иванович" name="order-city"
+                                                           required>
+                                                </label>
+                                                <label class="lk-form__item">
+                                                    Адрес
+                                                    <input type="text" class="input input--light" minlength="3"
+                                                           value="+7 (912) 777 77 77" name="order-address"
+                                                           required>
+                                                </label>
+                                                <fieldset class="lk-form__wrapper lk-form__wrapper--grid">
+                                                    <label class="lk-form__item">
+                                                        Дом, квартира
+                                                        <input type="text" class="input input--light" minlength="3"
+                                                               value="59/2" name="order-home"
+                                                               required>
+                                                    </label>
+                                                    <label class="lk-form__item">
+                                                        Индекс
+                                                        <input type="text" class="input input--light" minlength="3"
+                                                               value="350056" name="order-index"
+                                                               required>
+                                                    </label>
+                                                </fieldset>
+                                            </fieldset>
+                                            <div class="lk-form__tooltip">
+                                                <button type="button" class="button button--icon">
+                                                    <svg class="button__icon button__icon--primary button__icon--small">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                                    </svg>
+                                                    Добавить адрес
+                                                </button>
+                                                <button type="button" class="button button--basket">
+                                                    <svg class="button__icon">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </fieldset>
+                                        <p class="lk-form__text">
+                                            Доставка в вашем городе производится до терминала транспортной компании,
+                                            пожалуйста выберите транспортную компанию:
+                                        </p>
+                                        <a href="#" class="lk-form__link mb-40 mbm-0">Смотреть условия доставки</a>
+                                        <fieldset class="lk-form__wrapper lk-form__wrapper--flex">
+                                            <label class="lk-form__item lk-form__item--fix-size gap-10">
+                                                <span class="lk-form__head">Дата доставки</span>
+                                                <input class="lk-form__input input" type="date" name="date" id="date"
+                                                       value="2023-06-27" required>
+                                            </label>
+                                            <label class="lk-form__item lk-form__item--fix-size gap-10">
+                                                <span class="lk-form__head">Время доставки</span>
+                                                <input class="lk-form__input input" type="time" name="time" id="time"
+                                                       value="09:00">
+                                            </label>
+                                        </fieldset>
+                                    </fieldset>
+                                </section>
+                                <section class="lk-form__section">
+                                    <h3 class="lk-title mb-30 mbm-20">Способ оплаты</h3>
+                                    <fieldset class="lk-form__wrapper gap-m-10">
+                                        <label class="card">
+                                            <input type="radio" class="input input--radio" name="payment-type"
+                                                   id="payment-card" value="card" checked>
+                                            <span class="card__info">
+                                                <span class="card__text card__text--bold">Банковской картой</span>
+                                                <span class="card__text">Заберите заказ самостоятельно из магазина или склада DomDecor</span>
+                                            </span>
+                                        </label>
+                                        <label class="card">
+                                            <input type="radio" class="input input--radio" name="payment-type"
+                                                   id="payment-qr" value="qr">
+                                            <span class="card__info">
+                                                <span class="card__text card__text--bold">Оплата по QR-коду</span>
+                                                <span class="card__text">Заберите заказ самостоятельно из магазина или склада DomDecor</span>
+                                            </span>
+                                        </label>
+                                    </fieldset>
+                                </section>
+                                <button class="button button--field mob-hidden" type="submit">Оформить заказ</button>
+                            </div>
+                            <aside class="lk-info mbm-60">
+                                <div class="final-price">
+                                    <div class="final-price__top">
+                                        <div class="final-price__text">
+                                            <p>Всего товаров</p>
+                                            <p class="final-price__count">3 шт</p>
+                                        </div>
+                                        <div class="final-price__text">
+                                            <p class="final-price__text--strong">Сумма</p>
+                                            <div class="price price--right">
+                                                <p class="price__text">3 500<span>₽</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="final-price__bottom">
+                                        <button class="button button--field">Оформить заказ</button>
+                                    </div>
+                                </div>
+                            </aside>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="modal" id="modal" data-modal data-touch='false'>
+    <div class="modal__content">
+        <div class="article-remove">
+            <div class="article-remove__content">
+                <h2 class="title mb-30 mbm-20">Внимание!</h2>
+                <p class="subtitle subtitle--black mb-30">Уверены, что хотите очистить корзину?
+                    Вы можете:</p>
+                <button class="button button--300 button- button--orange mb-20">Отправить в «Мои проекты»</button>
+                <button class="button button--300">Очистить корзину</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal__close" data-close></div>
+</div>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

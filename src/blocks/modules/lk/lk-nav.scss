@@ -1,0 +1,24 @@
+.lk-nav {
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: rem(10);
+    padding: rem(18) rem(19);
+    font-weight: 500;
+    border-radius: rem(6);
+    color: $black-light;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &--active {
+      background-color: $light;
+      color: $orange;
+      svg {
+        fill: $orange;
+      }
+    }
+  }
+}

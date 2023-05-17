@@ -1,0 +1,42 @@
+.menu-mobile {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+  padding: 6px 20px 9px;
+  width: 100%;
+  background-color: $white;
+  z-index: 100;
+
+  @include r(1200) {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 8px;
+    font-size: rem(14);
+    line-height: rem(17);
+    color: #4A4A4A;
+  }
+
+  &__counter {
+    position: absolute;
+    top: -3px;
+    right: 10px;
+    @include counter;
+  }
+
+  &__icon {
+    fill: $orange;
+    width: 24px;
+    height: 24px;
+  }
+}

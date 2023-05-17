@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--search mbm-20">
+        <div class="container">
+            <div class="search-box" data-search-box>
+                <div class="search" data-search>
+                    <svg class="search__icon" data-icon>
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input class="search__input" type="text" placeholder="Поиск по бренду" data-search="input">
+                </div>
+            </div>
+        </div>
+    </section>
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section">
+        <div class="container">
+            <h2 class="title mob-hidden">Каталог</h2>
+            <div class="category">
+                <div class="category__wrapper">
+                    <div class="category__item" data-category-item>
+                        <a class="category__head" href="#">
+                            <img class="category__icon" src="./assets/sprite/icon-category-lepnina.svg" alt="">
+                            Интерьерная лепнина
+                        </a>
+                        <ul class="category__list" data-category-list>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="link-more" href="#">смотреть все</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category__item" data-category-item>
+                        <a class="category__head" href="#">
+                            <img class="category__icon" src="./assets/sprite/icon-category-facade.svg" alt="">
+                            Фасадная лепнина
+                        </a>
+                        <ul class="category__list" data-category-list>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="link-more" href="#">смотреть все</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category__item" data-category-item>
+                        <a class="category__head" href="#">
+                            <img class="category__icon" src="./assets/sprite/icon-category-wallpaper.svg" alt="">
+                            Обои и фрески
+                        </a>
+                        <ul class="category__list" data-category-list>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="link-more" href="#">смотреть все</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category__item" data-category-item>
+                        <a class="category__head" href="#">
+                            <img class="category__icon" src="./assets/sprite/icon-category-plaster.svg" alt="">
+                            Декоративная штукатурка
+                        </a>
+                        <ul class="category__list" data-category-list>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="link-more" href="#">смотреть все</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category__item" data-category-item>
+                        <a class="category__head" href="#">
+                            <img class="category__icon" src="./assets/sprite/icon-category-dye.svg" alt="">
+                            Краски
+                        </a>
+                        <ul class="category__list" data-category-list>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="link-more" href="#">смотреть все</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category__item" data-category-item>
+                        <a class="category__head" href="#">
+                            <img class="category__icon" src="./assets/sprite/icon-category-carpet.svg" alt="">
+                            Ковры
+                        </a>
+                        <ul class="category__list" data-category-list>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="link-more" href="#">смотреть все</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category__item" data-category-item>
+                        <a class="category__head" href="#">
+                            <img class="category__icon" src="./assets/sprite/icon-category-door.svg" alt="">
+                            Двери
+                        </a>
+                        <ul class="category__list" data-category-list>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="link-more" href="#">смотреть все</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category__item" data-category-item>
+                        <a class="category__head" href="#">
+                            <img class="category__icon" src="./assets/sprite/icon-category-furniture.svg" alt="">
+                            Мебель
+                        </a>
+                        <ul class="category__list" data-category-list>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="category__link" href="#">Категория</a>
+                            </li>
+                            <li>
+                                <a class="link-more" href="#">смотреть все</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section mb-100 mbm-60">
+        <div class="container">
+            <div class="columns">
+                <div class="columns__col columns__col--3">
+                    <%= htmlWebpackPlugin.options.productFilter %>
+                </div>
+                <div class="columns__col columns__col--9">
+                    <div class="products__wrapper">
+                        <form action="#">
+                            <div class="products__menu-mobile">
+                                <button class="button button--primary button--mobile" data-menu-open>Фильтр</button>
+                                <select class="select select--primary select--mobile" data-select>
+                                    <option class="select__item" value="low">Цена по убыванию</option>
+                                    <option class="select__item" value="height">Цена по возрастанию</option>
+                                    <option class="select__item" value="recommend" selected>Рекомендуемые</option>
+                                </select>
+                            </div>
+                            <%= htmlWebpackPlugin.options.sorting %>
+                        </form>
+                        <div class="grid-product mb-40 mbm-20">
+                            <div class="grid-product__item">
+                                <article class="article-product">
+                                    <div class="article-product__picture article-product__picture--functional"
+                                         data-fancybox="product" data-src="#modal">
+                                        <img class="article-product__img article-product__img--small"
+                                             src="https://via.placeholder.com/600/92c95"
+                                             alt="">
+                                        <span class="button button--fast-view article-product__picture-button">Быстрый просмотр</span>
+                                        <a class="button button--layout" href="#">
+                                            <svg class="article-product__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="article-product__body">
+                                        <p class="article-product__article">Арт. 8252791</p>
+                                        <h3 class="article-product__title">Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус
+                                            Европласт</h3>
+                                    </div>
+                                    <div class="article-product__footer article-product__footer--more">
+                                        <div class="article-product__box">
+                                            <p class="article-product__price">223 500<span>₽</span></p>
+                                        </div>
+                                        <div class="article-product__counter counter counter--small" data-counter>
+                                            <button class="counter__button" data-c-minus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                                                </svg>
+                                            </button>
+                                            <span class="counter__value" data-c-value>1</span>
+                                            <button class="counter__button" data-c-plus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button class="button button--field article-product__button">В корзину</button>
+                                        <button class="button button--orange--transparent article-product__button article-product__button--project"
+                                                data-button-open>
+                                            В
+                                            проекты
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="grid-product__item">
+                                <article class="article-product">
+                                    <div class="article-product__picture article-product__picture--functional"
+                                         data-fancybox="product" data-src="#modal">
+                                        <img class="article-product__img article-product__img--small"
+                                             src="https://via.placeholder.com/600/92c95"
+                                             alt="">
+                                        <span class="button button--fast-view article-product__picture-button">Быстрый просмотр</span>
+                                        <a class="button button--layout"
+                                           href="#">
+                                            <svg class="article-product__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="article-product__body">
+                                        <p class="article-product__article">Арт. 8252791</p>
+                                        <h3 class="article-product__title">Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус
+                                            Европласт</h3>
+                                    </div>
+                                    <div class="article-product__footer article-product__footer--more">
+                                        <div class="article-product__box">
+                                            <p class="article-product__price">3 500<span>₽</span></p>
+                                            <p class="article-product__price article-product__price--old">3 923
+                                                500<span>₽</span></p>
+                                        </div>
+                                        <div class="article-product__counter counter counter--small" data-counter>
+                                            <button class="counter__button" data-c-minus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                                                </svg>
+                                            </button>
+                                            <span class="counter__value" data-c-value>1</span>
+                                            <button class="counter__button" data-c-plus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button class="button button--field article-product__button">В корзину</button>
+                                        <button class="button button--orange--transparent article-product__button article-product__button--project"
+                                                data-button-open>
+                                            В
+                                            проекты
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="grid-product__item">
+                                <article class="article-product">
+                                    <div class="article-product__picture article-product__picture--functional"
+                                         data-fancybox="product" data-src="#modal">
+                                        <img class="article-product__img article-product__img--small"
+                                             src="https://via.placeholder.com/600/92c95"
+                                             alt="">
+                                        <span class="button button--fast-view article-product__picture-button">Быстрый просмотр</span>
+                                        <a class="button button--layout"
+                                           href="#">
+                                            <svg class="article-product__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="article-product__body">
+                                        <p class="article-product__article">Арт. 8252791</p>
+                                        <h3 class="article-product__title">Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус
+                                            Европласт</h3>
+                                    </div>
+                                    <div class="article-product__footer article-product__footer--more">
+                                        <div class="article-product__box">
+                                            <p class="article-product__price">3 500<span>₽</span></p>
+                                        </div>
+                                        <div class="article-product__counter counter counter--small" data-counter>
+                                            <button class="counter__button" data-c-minus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                                                </svg>
+                                            </button>
+                                            <span class="counter__value" data-c-value>1</span>
+                                            <button class="counter__button" data-c-plus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button class="button button--field article-product__button">В корзину</button>
+                                        <button class="button button--orange--transparent article-product__button article-product__button--project"
+                                                data-button-open>
+                                            В
+                                            проекты
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="grid-product__item">
+                                <article class="article-product">
+                                    <div class="article-product__picture article-product__picture--functional"
+                                         data-fancybox="product" data-src="#modal">
+                                        <img class="article-product__img article-product__img--small"
+                                             src="https://via.placeholder.com/600/92c95"
+                                             alt="">
+                                        <span class="button button--fast-view article-product__picture-button">Быстрый просмотр</span>
+                                        <a class="button button--layout"
+                                           href="#">
+                                            <svg class="article-product__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="article-product__body">
+                                        <p class="article-product__article">Арт. 8252791</p>
+                                        <h3 class="article-product__title">Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус
+                                            Европласт</h3>
+                                    </div>
+                                    <div class="article-product__footer article-product__footer--more">
+                                        <div class="article-product__box">
+                                            <p class="article-product__price">3 500<span>₽</span></p>
+                                        </div>
+                                        <div class="article-product__counter counter counter--small" data-counter>
+                                            <button class="counter__button" data-c-minus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                                                </svg>
+                                            </button>
+                                            <span class="counter__value" data-c-value>1</span>
+                                            <button class="counter__button" data-c-plus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button class="button button--field article-product__button">В корзину</button>
+                                        <button class="button button--orange--transparent article-product__button article-product__button--project"
+                                                data-button-open>
+                                            В
+                                            проекты
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="grid-product__item">
+                                <article class="article-product">
+                                    <div class="article-product__picture article-product__picture--functional"
+                                         data-fancybox="product" data-src="#modal">
+                                        <img class="article-product__img article-product__img--small"
+                                             src="https://via.placeholder.com/600/92c95"
+                                             alt="">
+                                        <span class="button button--fast-view article-product__picture-button">Быстрый просмотр</span>
+                                        <a class="button button--layout"
+                                           href="#">
+                                            <svg class="article-product__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="article-product__body">
+                                        <p class="article-product__article">Арт. 8252791</p>
+                                        <h3 class="article-product__title">Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус
+                                            Европласт</h3>
+                                    </div>
+                                    <div class="article-product__footer article-product__footer--more">
+                                        <div class="article-product__box">
+                                            <p class="article-product__price">3 500<span>₽</span></p>
+                                        </div>
+                                        <div class="article-product__counter counter counter--small" data-counter>
+                                            <button class="counter__button" data-c-minus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                                                </svg>
+                                            </button>
+                                            <span class="counter__value" data-c-value>1</span>
+                                            <button class="counter__button" data-c-plus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button class="button button--field article-product__button">В корзину</button>
+                                        <button class="button button--orange--transparent article-product__button article-product__button--project"
+                                                data-button-open>
+                                            В
+                                            проекты
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="grid-product__item">
+                                <article class="article-product">
+                                    <div class="article-product__picture article-product__picture--functional"
+                                         data-fancybox="product" data-src="#modal">
+                                        <img class="article-product__img article-product__img--small"
+                                             src="https://via.placeholder.com/600/92c95"
+                                             alt="">
+                                        <span class="button button--fast-view article-product__picture-button">Быстрый просмотр</span>
+                                        <a class="button button--layout"
+                                           href="#">
+                                            <svg class="article-product__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="article-product__body">
+                                        <p class="article-product__article">Арт. 8252791</p>
+                                        <h3 class="article-product__title">Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус
+                                            Европласт</h3>
+                                    </div>
+                                    <div class="article-product__footer article-product__footer--more">
+                                        <div class="article-product__box">
+                                            <p class="article-product__price">3 500<span>₽</span></p>
+                                        </div>
+                                        <div class="article-product__counter counter counter--small" data-counter>
+                                            <button class="counter__button" data-c-minus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                                                </svg>
+                                            </button>
+                                            <span class="counter__value" data-c-value>1</span>
+                                            <button class="counter__button" data-c-plus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button class="button button--field article-product__button">В корзину</button>
+                                        <button class="button button--orange--transparent article-product__button article-product__button--project"
+                                                data-button-open>
+                                            В
+                                            проекты
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="grid-product__item grid-product__item--large">
+                                <article class="preview preview--primary">
+                                    <div class="preview__content">
+                                        <h2 class="preview__title">Акция</h2>
+                                        <p class="preview__desc">Декоративная штукатурка Goldshell со скидкой 20% до 15
+                                            марта</p>
+                                        <button class="button button--slim button--field">Подробнее</button>
+                                    </div>
+                                    <picture class="preview__picture">
+                                        <img src="./assets/images/promo-1.png" alt="">
+                                    </picture>
+                                </article>
+                            </div>
+                            <div class="grid-product__item">
+                                <article class="article-product">
+                                    <div class="article-product__picture article-product__picture--functional"
+                                         data-fancybox="product" data-src="#modal">
+                                        <img class="article-product__img article-product__img--small"
+                                             src="https://via.placeholder.com/600/92c95"
+                                             alt="">
+                                        <span class="button button--fast-view article-product__picture-button">Быстрый просмотр</span>
+                                        <a class="button button--layout"
+                                           href="#">
+                                            <svg class="article-product__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="article-product__body">
+                                        <p class="article-product__article">Арт. 8252791</p>
+                                        <h3 class="article-product__title">Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус
+                                            Европласт</h3>
+                                    </div>
+                                    <div class="article-product__footer article-product__footer--more">
+                                        <div class="article-product__box">
+                                            <p class="article-product__price">3 500<span>₽</span></p>
+                                        </div>
+                                        <div class="article-product__counter counter counter--small" data-counter>
+                                            <button class="counter__button" data-c-minus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                                                </svg>
+                                            </button>
+                                            <span class="counter__value" data-c-value>1</span>
+                                            <button class="counter__button" data-c-plus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button class="button button--field article-product__button">В корзину</button>
+                                        <button class="button button--orange--transparent article-product__button article-product__button--project"
+                                                data-button-open>
+                                            В
+                                            проекты
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="grid-product__item">
+                                <article class="article-product">
+                                    <div class="article-product__picture article-product__picture--functional"
+                                         data-fancybox="product" data-src="#modal">
+                                        <img class="article-product__img article-product__img--small"
+                                             src="https://via.placeholder.com/600/92c95"
+                                             alt="">
+                                        <span class="button button--fast-view article-product__picture-button">Быстрый просмотр</span>
+                                        <a class="button button--layout"
+                                           href="#">
+                                            <svg class="article-product__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="article-product__body">
+                                        <p class="article-product__article">Арт. 8252791</p>
+                                        <h3 class="article-product__title">Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус
+                                            Европласт</h3>
+                                    </div>
+                                    <div class="article-product__footer article-product__footer--more">
+                                        <div class="article-product__box">
+                                            <p class="article-product__price">3 500<span>₽</span></p>
+                                        </div>
+                                        <div class="article-product__counter counter counter--small" data-counter>
+                                            <button class="counter__button" data-c-minus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                                                </svg>
+                                            </button>
+                                            <span class="counter__value" data-c-value>1</span>
+                                            <button class="counter__button" data-c-plus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button class="button button--field article-product__button">В корзину</button>
+                                        <button class="button button--orange--transparent article-product__button article-product__button--project"
+                                                data-button-open>
+                                            В
+                                            проекты
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="grid-product__item">
+                                <article class="article-product">
+                                    <div class="article-product__picture article-product__picture--functional"
+                                         data-fancybox="product" data-src="#modal">
+                                        <img class="article-product__img article-product__img--small"
+                                             src="https://via.placeholder.com/600/92c95"
+                                             alt="">
+                                        <span class="button button--fast-view article-product__picture-button">Быстрый просмотр</span>
+                                        <a class="button button--layout"
+                                           href="#">
+                                            <svg class="article-product__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="article-product__body">
+                                        <p class="article-product__article">Арт. 8252791</p>
+                                        <h3 class="article-product__title">Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус
+                                            Европласт</h3>
+                                    </div>
+                                    <div class="article-product__footer article-product__footer--more">
+                                        <div class="article-product__box">
+                                            <p class="article-product__price">3 500<span>₽</span></p>
+                                        </div>
+                                        <div class="article-product__counter counter counter--small" data-counter>
+                                            <button class="counter__button" data-c-minus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                                                </svg>
+                                            </button>
+                                            <span class="counter__value" data-c-value>1</span>
+                                            <button class="counter__button" data-c-plus>
+                                                <svg class="counter__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button class="button button--field article-product__button">В корзину</button>
+                                        <button class="button button--orange--transparent article-product__button article-product__button--project"
+                                                data-button-open>
+                                            В
+                                            проекты
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <%= htmlWebpackPlugin.options.pagination %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="menu-filter" data-menu-filter>
+    <header class="menu-filter__header">
+        <h2 class="title title--menu">Фильтр</h2>
+        <div class="close" data-menu-exit>
+            <svg class="menu-filter__icon menu-filter__icon--close">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-close"></use>
+            </svg>
+        </div>
+    </header>
+    <div class="menu-filter__content">
+        <form class="form-filter">
+            <div class="menu-item" data-menu-item>
+                <h3 class="menu-item__title">Бренды и коллекции</h3>
+                <svg class="menu-item__icon menu-item__icon--arrow">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+                <div class="menu-item__inner" data-menu-inner>
+                    <button class="button button--back" data-menu-back>
+                        <svg class="menu-item__icon menu-item__icon--arrow menu-item__icon--arrow--back">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                        </svg>
+                        Назад
+                    </button>
+                    <h3 class="menu-item__title">Бренды и коллекции</h3>
+                    <div class="menu-item__list">
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="evroplast">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Европласт
+                                <span class="filter-checkbox__count">299</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="bauhaus">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Bauhaus
+                                <span class="filter-checkbox__count">80</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="finch">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Finch
+                                <span class="filter-checkbox__count">97</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="finch">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Finch
+                                <span class="filter-checkbox__count">16</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="goldshell">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Goldshell
+                                <span class="filter-checkbox__count">56</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="Mallers">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Mallers
+                                <span class="filter-checkbox__count">11</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="sherwin-williams">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Sherwin-williams
+                                <span class="filter-checkbox__count">78</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="veiler">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Veiler
+                                <span class="filter-checkbox__count">169</span>
+                            </span>
+                        </label>
+                        <a href="#" class="link-more link-more--filter">Поиск по брендам</a>
+                    </div>
+                    <button class="button button--normal button--field">Применить</button>
+                </div>
+            </div>
+            <div class="menu-item" data-menu-item>
+                <h3 class="menu-item__title">Цена</h3>
+                <svg class="menu-item__icon menu-item__icon--arrow">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+                <div class="menu-item__inner" data-menu-inner>
+                    <button class="button button--back" data-menu-back>
+                        <svg class="menu-item__icon menu-item__icon--arrow menu-item__icon--arrow--back">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                        </svg>
+                        Назад
+                    </button>
+                    <h3 class="menu-item__title">Цена</h3>
+                    <div class="menu-item__list">
+                        <div class="range">
+                            <div class="range-input">
+                                <p class="range-input__text">от</p>
+                                <input class="input input--range" type="number" name="width" value="0" min="0"
+                                       max="200">
+                            </div>
+                            <div>-</div>
+                            <div class="range-input">
+                                <p class="range-input__text">до</p>
+                                <input class="input input--range" type="number" name="width" value="200" min="0"
+                                       max="200">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button button--normal button--field">Применить</button>
+                </div>
+            </div>
+            <div class="menu-item" data-menu-item>
+                <h3 class="menu-item__title">Цвет</h3>
+                <svg class="menu-item__icon menu-item__icon--arrow">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+                <div class="menu-item__inner" data-menu-inner>
+                    <button class="button button--back" data-menu-back>
+                        <svg class="menu-item__icon menu-item__icon--arrow menu-item__icon--arrow--back">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                        </svg>
+                        Назад
+                    </button>
+                    <h3 class="menu-item__title">Цвет</h3>
+                    <div class="menu-item__list">
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="color" value="red">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Красный
+                                <span class="filter-checkbox__count">299</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="color" value="green">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Зеленый
+                                <span class="filter-checkbox__count">80</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="color" value="color">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Цвет
+                                <span class="filter-checkbox__count">97</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="color" value="color">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Цвет
+                                <span class="filter-checkbox__count">16</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="color" value="color">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Цвет
+                                <span class="filter-checkbox__count">56</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="color" value="color">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Цвет
+                                <span class="filter-checkbox__count">11</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="color" value="color">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Цвет
+                                <span class="filter-checkbox__count">78</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="color" value="color">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Цвет
+                                <span class="filter-checkbox__count">169</span>
+                            </span>
+                        </label>
+                        <a href="#" class="link-more link-more--filter">Поиск по брендам</a>
+                    </div>
+                    <button class="button button--normal button--field">Применить</button>
+                </div>
+            </div>
+            <div class="menu-item" data-menu-item>
+                <h3 class="menu-item__title">Назначение</h3>
+                <svg class="menu-item__icon menu-item__icon--arrow">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+                <div class="menu-item__inner" data-menu-inner>
+                    <button class="button button--back" data-menu-back>
+                        <svg class="menu-item__icon menu-item__icon--arrow menu-item__icon--arrow--back">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                        </svg>
+                        Назад
+                    </button>
+                    <h3 class="menu-item__title">Назначение</h3>
+                    <div class="menu-item__list">
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="evroplast">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Европласт
+                                <span class="filter-checkbox__count">299</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="bauhaus">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Bauhaus
+                                <span class="filter-checkbox__count">80</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="finch">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Finch
+                                <span class="filter-checkbox__count">97</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="finch">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Finch
+                                <span class="filter-checkbox__count">16</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="goldshell">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Goldshell
+                                <span class="filter-checkbox__count">56</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="Mallers">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Mallers
+                                <span class="filter-checkbox__count">11</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="sherwin-williams">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Sherwin-williams
+                                <span class="filter-checkbox__count">78</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="veiler">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Veiler
+                                <span class="filter-checkbox__count">169</span>
+                            </span>
+                        </label>
+                        <a href="#" class="link-more link-more--filter">Поиск по брендам</a>
+                    </div>
+                    <button class="button button--normal button--field">Применить</button>
+                </div>
+            </div>
+            <div class="menu-item" data-menu-item>
+                <h3 class="menu-item__title">Страна бренда</h3>
+                <svg class="menu-item__icon menu-item__icon--arrow">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+                <div class="menu-item__inner" data-menu-inner>
+                    <button class="button button--back" data-menu-back>
+                        <svg class="menu-item__icon menu-item__icon--arrow menu-item__icon--arrow--back">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                        </svg>
+                        Назад
+                    </button>
+                    <h3 class="menu-item__title">Страна бренда</h3>
+                    <div class="menu-item__list">
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="evroplast">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Европласт
+                                <span class="filter-checkbox__count">299</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="bauhaus">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Bauhaus
+                                <span class="filter-checkbox__count">80</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="finch">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Finch
+                                <span class="filter-checkbox__count">97</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="finch">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Finch
+                                <span class="filter-checkbox__count">16</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="goldshell">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Goldshell
+                                <span class="filter-checkbox__count">56</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="Mallers">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Mallers
+                                <span class="filter-checkbox__count">11</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="sherwin-williams">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Sherwin-williams
+                                <span class="filter-checkbox__count">78</span>
+                            </span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input class=" hidden" type="checkbox" name="brand" value="veiler">
+                            <span class="checkbox checkbox--big">
+                                <svg>
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                </svg>
+                            </span>
+                            <span class="filter-checkbox__info">
+                                Veiler
+                                <span class="filter-checkbox__count">169</span>
+                            </span>
+                        </label>
+                        <a href="#" class="link-more link-more--filter">Поиск по брендам</a>
+                    </div>
+                    <button class="button button--normal button--field">Применить</button>
+                </div>
+            </div>
+            <div class="menu-item" data-menu-item>
+                <h3 class="menu-item__title">Длина</h3>
+                <svg class="menu-item__icon menu-item__icon--arrow">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+                <div class="menu-item__inner" data-menu-inner>
+                    <button class="button button--back" data-menu-back>
+                        <svg class="menu-item__icon menu-item__icon--arrow menu-item__icon--arrow--back">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                        </svg>
+                        Назад
+                    </button>
+                    <h3 class="menu-item__title">Длина</h3>
+                    <div class="menu-item__list">
+                        <div class="range">
+                            <div class="range-input">
+                                <p class="range-input__text">от</p>
+                                <input class="input input--range" type="number" name="width" value="0" min="0"
+                                       max="200">
+                            </div>
+                            <div>-</div>
+                            <div class="range-input">
+                                <p class="range-input__text">до</p>
+                                <input class="input input--range" type="number" name="width" value="200" min="0"
+                                       max="200">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button button--normal button--field">Применить</button>
+                </div>
+            </div>
+            <div class="menu-item" data-menu-item>
+                <h3 class="menu-item__title">Ширина</h3>
+                <svg class="menu-item__icon menu-item__icon--arrow">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+                <div class="menu-item__inner" data-menu-inner>
+                    <button class="button button--back" data-menu-back>
+                        <svg class="menu-item__icon menu-item__icon--arrow menu-item__icon--arrow--back">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                        </svg>
+                        Назад
+                    </button>
+                    <h3 class="menu-item__title">Ширина</h3>
+                    <div class="menu-item__list">
+                        <div class="range">
+                            <div class="range-input">
+                                <p class="range-input__text">от</p>
+                                <input class="input input--range" type="number" name="width" value="0" min="0"
+                                       max="200">
+                            </div>
+                            <div>-</div>
+                            <div class="range-input">
+                                <p class="range-input__text">до</p>
+                                <input class="input input--range" type="number" name="width" value="200" min="0"
+                                       max="200">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button button--normal button--field">Применить</button>
+                </div>
+            </div>
+            <div class="menu-item" data-menu-item>
+                <h3 class="menu-item__title">Высота</h3>
+                <svg class="menu-item__icon menu-item__icon--arrow">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+                <div class="menu-item__inner" data-menu-inner>
+                    <button class="button button--back" data-menu-back>
+                        <svg class="menu-item__icon menu-item__icon--arrow menu-item__icon--arrow--back">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                        </svg>
+                        Назад
+                    </button>
+                    <h3 class="menu-item__title">Высота</h3>
+                    <div class="menu-item__list">
+                        <div class="range">
+                            <div class="range-input">
+                                <p class="range-input__text">от</p>
+                                <input class="input input--range" type="number" name="width" value="0" min="0"
+                                       max="200">
+                            </div>
+                            <div>-</div>
+                            <div class="range-input">
+                                <p class="range-input__text">до</p>
+                                <input class="input input--range" type="number" name="width" value="200" min="0"
+                                       max="200">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button button--normal button--field">Применить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+<div class="popup hide" data-popup>
+    <div class="popup__header">
+        <h2 class="popup__title">Сохранить в «Мои проекты»</h2>
+    </div>
+    <div class="popup__content">
+        <div class="search-box mb-20" data-search-box>
+            <div class="search" data-search>
+                <svg class="search__icon" data-icon>
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                </svg>
+                <input class="search__input" type="text" placeholder="Искать проект" data-search="input">
+            </div>
+        </div>
+        <div class="popup__projects">
+            <div class="popup-project">
+                <p class="popup-project__title">Квартира на Северной Кранодар</p>
+                <div class="popup-project__rooms">
+                    <div class="popup-project__room">
+                        <picture class="popup-project__picture">
+                            <img src="https://via.placeholder.com/50/92c95" alt="">
+                        </picture>
+                        <h3 class="popup-project__text">Спальня девочки розова</h3>
+                        <button class="popup-project__button button button--orange">Сохранить</button>
+                    </div>
+                    <div class="popup-project__room">
+                        <picture class="popup-project__picture">
+                            <img src="https://via.placeholder.com/50/92c95" alt="">
+                        </picture>
+                        <h3 class="popup-project__text">Спальня родителей</h3>
+                        <button class="popup-project__button button button--orange">Сохранить</button>
+                    </div>
+                </div>
+                <a href="#" class="add-project add-project--full" data-fancybox="product" data-src="#modal-room">
+                        <span class="add-project__button">
+                            <svg class="add-project__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                            </svg>
+                        </span>
+                    Добавить комнату
+                </a>
+            </div>
+            <div class="popup-project">
+                <p class="popup-project__title">Квартира на Северной Кранодар</p>
+                <div class="popup-project__rooms">
+                    <div class="popup-project__room">
+                        <picture class="popup-project__picture">
+                            <img src="https://via.placeholder.com/50/92c95" alt="">
+                        </picture>
+                        <h3 class="popup-project__text">Спальня девочки розова</h3>
+                        <button class="popup-project__button button button--orange">Сохранить</button>
+                    </div>
+                    <div class="popup-project__room">
+                        <picture class="popup-project__picture">
+                            <img src="https://via.placeholder.com/50/92c95" alt="">
+                        </picture>
+                        <h3 class="popup-project__text">Спальня родителей</h3>
+                        <button class="popup-project__button button button--orange">Сохранить</button>
+                    </div>
+                </div>
+                <a href="#" class="add-project add-project--full" data-fancybox="product" data-src="#modal-room">
+                        <span class="add-project__button">
+                            <svg class="add-project__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                            </svg>
+                        </span>
+                    Добавить комнату
+                </a>
+            </div>
+            <div class="popup-project">
+                <p class="popup-project__title">Квартира на Северной Кранодар</p>
+                <div class="popup-project__rooms">
+                    <div class="popup-project__room">
+                        <picture class="popup-project__picture">
+                            <img src="https://via.placeholder.com/50/92c95" alt="">
+                        </picture>
+                        <h3 class="popup-project__text">Спальня девочки розова</h3>
+                        <button class="popup-project__button button button--orange">Сохранить</button>
+                    </div>
+                    <div class="popup-project__room">
+                        <picture class="popup-project__picture">
+                            <img src="https://via.placeholder.com/50/92c95" alt="">
+                        </picture>
+                        <h3 class="popup-project__text">Спальня родителей</h3>
+                        <button class="popup-project__button button button--orange">Сохранить</button>
+                    </div>
+                </div>
+                <a href="#" class="add-project add-project--full" data-fancybox="product" data-src="#modal-room">
+                    <span class="add-project__button">
+                        <svg class="add-project__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                        </svg>
+                    </span>
+                    Добавить комнату
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="popup__footer">
+        <a href="#" class="add-project add-project--full" data-fancybox="product" data-src="#modal">
+            <span class="add-project__button">
+                <svg class="add-project__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                </svg>
+            </span>
+            Создать проект
+        </a>
+    </div>
+</div>
+<div class="modal" id="create-project" data-modal data-touch='false'>
+    <div class="modal__content">
+        <article class="modal-project">
+            <form action="#" class="modal-project__form">
+                <h3 class="title mb-30 mbm-20 title--medium">Создание проекта</h3>
+                <div class="modal-project__content mb-30">
+                    <picture class="modal-project__picture">
+                        <img class="modal-project__img" src="../assets/images/logo-empty.png"
+                             alt="Фото каталога 'Краски'">
+                    </picture>
+                    <div class="modal-project__info">
+                        <p class="modal-project__text">Создайте общий проект и наполните <br/> его объектами или
+                            комнатами </p>
+                        <input class="input mb-10" type="text" minlength="3"
+                               placeholder="Название проекта, например, «Квартира №1»">
+                        <label class="button button--icon button--icon--basic">
+                            <input class="hidden" type="file">
+                            <svg class="button__icon button__icon--primary button__icon--medium">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
+                            </svg>
+                            Загрузить обложку
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-project__controls">
+                    <button class="button">Отменить</button>
+                    <button class="button button--field">Создать</button>
+                </div>
+            </form>
+        </article>
+    </div>
+    <div class="modal__close" data-close></div>
+</div>
+<div class="modal" id="modal-room" data-modal data-touch='false'>
+    <div class="modal__content">
+        <article class="modal-project">
+            <form action="#" class="modal-project__form">
+                <h3 class="title mb-30 mbm-20 title--medium">Создание комнаты</h3>
+                <div class="modal-project__content mb-30">
+                    <div class="modal-project__picture modal-project__picture--grid" data-project-pictures>
+                        <img class="modal-project__img" src="https://via.placeholder.com/600/92c66"
+                             alt="Фото каталога 'Краски'">
+                        <img class="modal-project__img" src="https://via.placeholder.com/600/92c66"
+                             alt="Фото каталога 'Краски'">
+                        <img class="modal-project__img" src="https://via.placeholder.com/600/92c66"
+                             alt="Фото каталога 'Краски'">
+                        <img class="modal-project__img" src="https://via.placeholder.com/600/92c66"
+                             alt="Фото каталога 'Краски'">
+                    </div>
+                    <div class="modal-project__info">
+                        <p class="modal-project__text">Добавляйте комнаты к готовому проекту</p>
+                        <input class="input mb-10" type="text" minlength="3"
+                               placeholder="Название проекта, например, «Квартира №1»">
+                        <label class="button button--icon button--icon--basic">
+                            <input class="hidden" type="file">
+                            <svg class="button__icon button__icon--primary button__icon--medium">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
+                            </svg>
+                            Загрузить обложку
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-project__controls">
+                    <button class="button">Отменить</button>
+                    <button class="button button--field">Создать</button>
+                </div>
+            </form>
+        </article>
+    </div>
+    <div class="modal__close" data-close></div>
+</div>
+</body>
+</html>

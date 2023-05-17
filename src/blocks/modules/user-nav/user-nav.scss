@@ -1,0 +1,42 @@
+.user-nav {
+  display: flex;
+  align-items: center;
+  column-gap: rem(40);
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: rem(20);
+  }
+
+  &__elem {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &-basket {
+      position: relative;
+    }
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &__count {
+    position: absolute;
+    top: rem(-2);
+    right: rem(-11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: $white;
+    font-size: rem(9);
+    font-weight: 600;
+    width: rem(18);
+    height: rem(18);
+    background-color: $orange;
+  }
+}

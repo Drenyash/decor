@@ -1,0 +1,20 @@
+.article-list {
+  display: flex;
+  align-items: flex-start;
+  column-gap: rem(30);
+
+  &:not(:last-child) {
+    padding-bottom: rem(40);
+    border-bottom: 1px solid white;
+  }
+
+  &:not(:first-child) {
+    padding-top: rem(40);
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: rem(70);
+    height: rem(96);
+  }
+}

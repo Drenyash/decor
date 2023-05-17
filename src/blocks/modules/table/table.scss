@@ -1,0 +1,142 @@
+.table {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: rem(10) 0 rem(10) rem(30);
+    background-color: $primary-light;
+    border-radius: rem(6);
+
+    @include r(1200) {
+      display: none;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: rem(60);
+
+    @include r(1200) {
+      row-gap: rem(30);
+    }
+  }
+
+  &__wrapper {
+    padding-bottom: rem(10);
+    border-bottom: 1px solid $light;
+
+    @include r(1200) {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  &__title {
+    color: $black;
+    @include r(1200) {
+      font-weight: 600;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    font-size: rem(14);
+    color: $black;
+
+    &--bold {
+      font-size: rem(16);
+      font-weight: 600;
+    }
+  }
+
+  &__size {
+    font-weight: 500;
+    color: $gray;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: rem(10);
+    font-weight: 600;
+    color: $primary;
+    cursor: pointer;
+    @include r(1200) {
+      justify-content: flex-start;
+    }
+    @include hover;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    padding: rem(10) 0 rem(10) rem(30);
+    transition: all .2s linear;
+
+    @include r(1200) {
+      row-gap: rem(10);
+      flex-direction: column;
+      align-items: flex-start;
+      padding: rem(20) 0;
+      border-bottom: 1px solid $light;
+    }
+
+    &:hover {
+      background-color: $light;
+      border-radius: rem(6);
+    }
+  }
+
+  &__el {
+    &--10 {
+      width: 10%;
+    }
+
+    &--20 {
+      width: 20%;
+    }
+
+    &--30 {
+      width: 30%;
+    }
+
+    &--40 {
+      width: 40%;
+    }
+
+    &--50 {
+      width: 50%;
+    }
+
+    &--60 {
+      width: 60%;
+    }
+
+    &--70 {
+      width: 70%;
+    }
+
+    &--80 {
+      width: 80%;
+    }
+
+    &--90 {
+      width: 70%;
+    }
+
+    &--100 {
+      width: 80%;
+    }
+
+    &--full-m {
+      @include r(1200) {
+        width: 100%;
+      }
+    }
+  }
+}

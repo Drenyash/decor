@@ -1,0 +1,18 @@
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: rem(12) rem(20) rem(12) rem(30);
+  background-color: $primary-light;
+  border-radius: rem(6);
+
+  @include r(1200) {
+    display: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: rem(20);
+  }
+}

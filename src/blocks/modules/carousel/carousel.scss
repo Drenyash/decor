@@ -1,0 +1,23 @@
+.carousel {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  &__counter {
+    position: absolute;
+    left: rem(30);
+    bottom: rem(30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(46);
+    height: rem(46);
+    font-size: rem(16);
+    line-height: rem(19);
+    font-weight: 600;
+    color: $black-light;
+    background-color: $light;
+    border-radius: rem(6);
+  }
+}

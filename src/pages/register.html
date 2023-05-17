@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container container--field">
+            <div class="auth">
+                <h2 class="auth__title title title--medium">Регистрация</h2>
+                <form action="#" class="auth-form">
+                    <fieldset class="auth-form__wrapper">
+                        <label class="card">
+                            <input type="radio" class="input input--radio" name="ACCOUNT_TYPE"
+                                   id="personal" value="personal" checked>
+                            <span class="card__info">
+                            <span class="card__text card__text--bold">Физическое лицо</span>
+                            <span class="card__text">Совершайте покупки с личного аккаунта </span>
+                        </span>
+                        </label>
+                        <label class="card">
+                            <input type="radio" class="input input--radio" name="ACCOUNT_TYPE"
+                                   id="company" value="company">
+                            <span class="card__info">
+                            <span class="card__text card__text--bold">Юридическое лицо</span>
+                            <span class="card__text">Зарегистрируйте компанию и получайте персональные скидки</span>
+                        </span>
+                        </label>
+                    </fieldset>
+                    <button class="auth__button button">Далее</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

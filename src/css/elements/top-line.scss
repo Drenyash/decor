@@ -1,0 +1,64 @@
+.top-line {
+  padding: rem(9) 0 rem(6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include r(1200) {
+    display: none;
+  }
+
+  &__left {
+    display: flex;
+    column-gap: rem(21);
+  }
+
+  &__place {
+    display: flex;
+    align-items: center;
+    column-gap: rem(20);
+  }
+
+  &__open {
+    display: flex;
+    column-gap: rem(12);
+  }
+
+  &__select {
+    font-size: rem(14);
+    line-height: rem(26);
+    font-weight: 600;
+    color: $primary;
+    cursor: pointer;
+  }
+
+  &__callback {
+    display: flex;
+    align-items: center;
+    padding-bottom: rem(4);
+    column-gap: rem(22);
+  }
+
+  &__text {
+    font-size: rem(14);
+    line-height: rem(22);
+    color: $dark;
+    &--bold {
+      font-weight: 600;
+      color: $primary;
+    }
+  }
+
+  &__icon {
+    fill: none;
+    stroke: $primary;
+  }
+
+  &__link {
+    font-size: rem(14);
+    font-weight: 600;
+    line-height: rem(22);
+    color: $dark;
+    @include hover;
+  }
+}

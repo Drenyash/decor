@@ -1,0 +1,131 @@
+@use "sass:math";
+
+// width
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content
+  }
+}
+
+@mixin rmin($width) {
+  @media only screen and (min-width: $width+ "px") {
+    @content
+  }
+}
+
+// height
+@mixin rh($height) {
+  @media only screen and (max-height: $height + "px") {
+    @content
+  }
+}
+
+@mixin rhmin($height) {
+  @media only screen and (min-height: $height + "px") {
+    @content
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}
+
+@function rem($size) {
+  @return $size / $root-font-size * 1rem;
+}
+
+@mixin pt($size) {
+    padding-top: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 20 {
+    .pt-#{$i} {
+        @include pt($i);
+    }
+}
+
+@for $i from 5 through 50 {
+    $new_value: $i * 5;
+    .pt-#{$new_value} {
+        @include pt($new_value);
+    }
+}
+
+// Padding-bottom class generator
+@mixin pb($size) {
+    padding-bottom: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 20 {
+    .pb-#{$i} {
+        @include pb($i);
+    }
+}
+
+@for $i from 5 through 50 {
+    $new_value: $i * 5;
+    .pb-#{$new_value} {
+        @include pb($new_value);
+    }
+}
+
+// Margin-bottom class generator
+@mixin mb($size) {
+    //margin-bottom: $size + px;
+    margin-bottom: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 20 {
+    .mb-#{$i} {
+        @include mb($i);
+    }
+}
+
+@for $i from 5 through 50 {
+    $new_value: $i * 5;
+    .mb-#{$new_value} {
+        @include mb($new_value);
+    }
+}
+
+// Hover
+@mixin hover() {
+  &:hover {
+    opacity: .7;
+  }
+}
+
+// Counter
+@mixin counter {
+  display: flex;
+  min-width: rem(18);
+  min-height: rem(18);
+  justify-content: center;
+  align-items: center;
+  font-size: rem(9);
+  line-height: rem(9);
+  font-weight: 600;
+  color: $white;
+  background-color: $orange;
+  border-radius: 50%;
+}
+
+@mixin video {
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 84px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODUiIGhlaWdodD0iODQiIHZpZXdCb3g9IjAgMCA4NSA4NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00Mi45MTQxIDg0QzY2LjExIDg0IDg0LjkxNDEgNjUuMTk2IDg0LjkxNDEgNDJDODQuOTE0MSAxOC44MDQgNjYuMTEgMCA0Mi45MTQxIDBDMTkuNzE4MSAwIDAuOTE0MDYyIDE4LjgwNCAwLjkxNDA2MiA0MkMwLjkxNDA2MiA2NS4xOTYgMTkuNzE4MSA4NCA0Mi45MTQxIDg0Wk0zMS45MTQxIDYxLjA1MjZMNjQuOTE0MSA0MkwzMS45MTQxIDIyLjk0NzRMMzEuOTE0MSA2MS4wNTI2WiIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC44Ii8+Cjwvc3ZnPgo=);
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+  }
+}

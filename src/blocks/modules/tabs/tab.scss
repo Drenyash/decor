@@ -1,0 +1,39 @@
+.tab {
+  position: relative;
+  display: flex;
+  padding-bottom: rem(5);
+  transition: .3s linear;
+
+  @include r(1200) {
+    flex-direction: column;
+    border-bottom: 1px solid $light;
+    &__item {
+      width: 100%;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: rem(10) 0;
+  }
+
+  &__body.active--visible {
+    @include r(1200) {
+      padding-bottom: rem(15);
+    }
+  }
+
+  &__icon {
+    display: none;
+    width: rem(14);
+    height: rem(14);
+    fill: $black-light;
+    transform: rotate(-90deg);
+    @include r(1200) {
+      display: block;
+    }
+  }
+}

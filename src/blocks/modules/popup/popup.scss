@@ -1,0 +1,57 @@
+.popup {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: rem(330);
+  max-height: rem(520);
+  padding: rem(20) rem(30) rem(30) rem(30);
+  border-radius: rem(6);
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 #000000;
+
+  &__header {
+    padding-bottom: rem(10);
+  }
+
+  &__content {
+    padding: rem(10) 0;
+    height: 100%;
+    border-top: 1px solid $light;
+    border-bottom: 1px solid $light;
+  }
+
+  &__footer {
+    padding-top: rem(10);
+    margin-top: auto;
+  }
+
+  &__title {
+    font-weight: 600;
+    color: #090909;
+  }
+
+  &__projects {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    max-height: 315px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      width: 4px;
+      border-radius: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $light;
+      border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $gray;
+      border-radius: 20px;
+    }
+  }
+}

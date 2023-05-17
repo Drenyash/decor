@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section section--primary ptm-40 pbm-40">
+        <div class="container">
+            <div class="columns columns--center">
+                <div class="columns__col columns__col--6 columns__col--mob-4 mbm-20">
+                    <h1 class="title mb-20">Dom Decor</h1>
+                    <p class="subtitle mb-10">
+                        Таким образом новая модель организационной деятельности влечет за собой процесс внедрения и
+                        модернизации соответствующий условий активизации.
+                    </p>
+                    <p class="subtitle">
+                        Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей
+                        деятельности представляет собой интересный эксперимент.
+                    </p>
+                </div>
+                <div class="columns__col columns__col--6 columns__col--mob-4">
+                    <picture class="picture picture--preview">
+                        <img src="https://fakeimg.pl/1920x1080" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-100 ptm-60 pb-100 pbm-60">
+        <div class="container">
+            <img class="img centered mb-10" src="./assets/images/quote.png" alt="">
+            <h2 class="slogan">
+                Компания с большим<br> ассортиментом и широкой душой
+            </h2>
+        </div>
+    </section>
+    <section class="section section--gray pt-60 ptm-40 pb-60 pbm-50">
+        <div class="container">
+            <div class="columns mb-40">
+                <div class="columns__col columns__col--6 columns__col--mob-4">
+                    <h2 class="title mb-20">С кем работаем</h2>
+                    <p class="subtitle">
+                        Таким образом новая модель организационной деятельности влечет за собой процесс внедрения и
+                        модернизации
+                        соответствующий условий активизации.
+                    </p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="columns__col columns__col--4 columns__col--mob-4 mbm-20">
+                    <article class="article-employee">
+                        <div class="article-employee__info">
+                            <h3 class="article-employee__title">Профессионалы</h3>
+                            <p class="article-employee__text">
+                                Для дизайнеров, прорабов, мастеров, строительных компаний и дизайн студий
+                            </p>
+                            <a href="./professional.html" class="link-more">Подробнее</a>
+                        </div>
+                        <picture class="article-employee__picture">
+                            <img src="./assets/images/employee-1.png" alt="">
+                        </picture>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--4 columns__col--mob-4 mbm-20">
+                    <article class="article-employee">
+                        <div class="article-employee__info">
+                            <h3 class="article-employee__title">Частные лица</h3>
+                            <p class="article-employee__text">
+                                Таким образом новая модель организационной деятельности влечет за собой процесс
+                            </p>
+                            <a href="./professional.html" class="link-more">Подробнее</a>
+                        </div>
+                        <picture class="article-employee__picture">
+                            <img src="./assets/images/employee-2.png" alt="">
+                        </picture>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--4 columns__col--mob-4">
+                    <article class="article-employee">
+                        <div class="article-employee__info">
+                            <h3 class="article-employee__title">Диллеры</h3>
+                            <p class="article-employee__text">
+                                Таким образом новая модель организационной деятельности влечет за собой процесс
+                            </p>
+                            <a href="./professional.html" class="link-more">Подробнее</a>
+                        </div>
+                        <picture class="article-employee__picture">
+                            <img src="./assets/images/employee-3.png" alt="">
+                        </picture>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-100 ptm-60 pb-100 pbm-60">
+        <div class="container">
+            <div class="gallery">
+                <div class="gallery__info">
+                    <h2 class="gallery__title title">Галерея готовых решений</h2>
+                    <p class="gallery__subtitle subtitle">Готовые решения для дизайнерских
+                        квартир от отделки до мебели</p>
+                    <button class="button button--field">Смотреть проекты</button>
+                </div>
+                <div class="flex-gallery">
+                    <div class="flex-gallery__box">
+                        <div class="flex-gallery__item">
+                            <article class="article-gallery">
+                                <img class="article-gallery__icon" src="https://via.placeholder.com/600/92c95" alt="">
+                            </article>
+                        </div>
+                        <div class="flex-gallery__item">
+                            <article class="article-gallery">
+                                <img class="article-gallery__icon" src="https://via.placeholder.com/600/92c95" alt="">
+                            </article>
+                        </div>
+                    </div>
+                    <div class="flex-gallery__item flex-gallery__item--full">
+                        <article class="article-gallery">
+                            <img class="article-gallery__icon" src="https://via.placeholder.com/300x1000/92c95" alt="">
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray pt-60 pb-90 ptm-40 pbm-40">
+        <div class="container">
+            <h2 class="title mb-30">Наши партнёры</h2>
+            <div class="slider" data-slider="companys">
+                <div class="swiper" data-slide>
+                    <div class="swiper-wrapper slider__wrapper">
+                        <div class="swiper-slide slider__item">
+                            <a href="#" class="article-company">
+                                <picture class="article-company__picture">
+                                    <img src="./assets/images/logos/logo-dogma.png" alt="">
+                                </picture>
+                                <strong class="article-company__name">Догма</strong>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <a href="#" class="article-company">
+                                <picture class="article-company__picture">
+                                    <img src="https://via.placeholder.com/270/92c952" alt="">
+                                </picture>
+                                <strong class="article-company__name">Догма</strong>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <a href="#" class="article-company">
+                                <picture class="article-company__picture">
+                                    <img src="https://via.placeholder.com/270/92c952" alt="">
+                                </picture>
+                                <strong class="article-company__name">Догма</strong>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <a href="#" class="article-company">
+                                <picture class="article-company__picture">
+                                    <img src="https://via.placeholder.com/270/92c952" alt="">
+                                </picture>
+                                <strong class="article-company__name">Догма</strong>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <a href="#" class="article-company">
+                                <picture class="article-company__picture">
+                                    <img src="https://via.placeholder.com/270/92c952" alt="">
+                                </picture>
+                                <strong class="article-company__name">Догма</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__nav" data-nav>
+                    <div class="slider__button slider__button--prev" data-button-prev>
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-scroll-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__button slider__button--next" data-button-next>
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-scroll-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-100 ptm-60 pb-90 pbm-70">
+        <div class="container">
+            <h2 class="title mb-30">Отзывы</h2>
+            <div class="slider" data-slider="reviews">
+                <div class="swiper" data-slide>
+                    <div class="swiper-wrapper slider__wrapper">
+                        <div class="swiper-slide slider__item">
+                            <a href="#" class="article-reviews">
+                                <picture class="article-reviews__picture">
+                                    <img src="https://fakeimg.pl/270x400" alt="">
+                                </picture>
+                                <strong class="article-reviews__name">Отзыв Морозова С.П.
+                                    СК «Догма»</strong>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <a href="#" class="article-reviews">
+                                <picture class="article-reviews__picture">
+                                    <img src="https://fakeimg.pl/270x400" alt="">
+                                </picture>
+                                <strong class="article-reviews__name">Отзыв Морозова С.П.
+                                    СК «Догма»</strong>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <a href="#" class="article-reviews">
+                                <picture class="article-reviews__picture">
+                                    <img src="https://fakeimg.pl/270x400" alt="">
+                                </picture>
+                                <strong class="article-reviews__name">Отзыв Морозова С.П.
+                                    СК «Догма»</strong>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <a href="#" class="article-reviews">
+                                <picture class="article-reviews__picture">
+                                    <img src="https://fakeimg.pl/270x400" alt="">
+                                </picture>
+                                <strong class="article-reviews__name">Отзыв Морозова С.П.
+                                    СК «Догма»</strong>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <a href="#" class="article-reviews">
+                                <picture class="article-reviews__picture">
+                                    <img src="https://fakeimg.pl/270x400" alt="">
+                                </picture>
+                                <strong class="article-reviews__name">Отзыв Морозова С.П.
+                                    СК «Догма»</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__nav" data-nav>
+                    <div class="slider__button slider__button--prev" data-button-prev>
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-scroll-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__button slider__button--next" data-button-next>
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-scroll-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

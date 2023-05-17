@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <div class="auth">
+                <h2 class="auth__title title title--medium">Восстановление доступа</h2>
+                <p class="subtitle subtitle--small mb-20 mbm-10">Укажите почту, чтобы получить ссылку для изменения пароля</p>
+                <form action="#" class="auth-form" data-form>
+                    <input type="email" class="input input--light" minlength="3" placeholder="Почта"
+                           name="restore-email" required data-input>
+                    <button class="button button--field">Получить ссылку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

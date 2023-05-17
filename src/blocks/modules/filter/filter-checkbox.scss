@@ -1,0 +1,43 @@
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  column-gap: rem(10);
+  color: #000;
+
+  &--field {
+    .filter-checkbox__info {
+      font-size: rem(16);
+      color: $gray;
+    }
+  }
+
+  &--policy {
+    align-items: flex-start;
+    color: $gray;
+    .filter-checkbox__info {
+      display: inline-block;
+      a {
+        text-decoration: underline;
+        @include hover;
+      }
+    }
+  }
+
+  & > input:checked ~ .checkbox {
+    background-color: $primary;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    column-gap: rem(7);
+    font-size: rem(14);
+    line-height: rem(18);
+    font-weight: 500;
+  }
+
+  &__count {
+    color: $primary-opacity;
+  }
+}

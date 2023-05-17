@@ -1,0 +1,12 @@
+.range-input {
+  display: flex;
+  padding: rem(9) rem(10);
+  column-gap: rem(10);
+  align-items: center;
+  background-color: $light;
+  border-radius: rem(6);
+  font-size: rem(14);
+  line-height: rem(20);
+  font-weight: 600;
+  color: $gray;
+}

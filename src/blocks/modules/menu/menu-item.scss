@@ -1,0 +1,59 @@
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: rem(13) 0 rem(17);
+  border-bottom: 1px solid $light;
+
+  &__title {
+    font-size: rem(16);
+    line-height: rem(19);
+    font-weight: 600;
+    color: $black-light;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(14);
+    row-gap: rem(18);
+  }
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: rem(4);
+    row-gap: rem(20);
+    background-color: #F8F9FD;
+    cursor: auto;
+    z-index: 5;
+    overflow-y: auto;
+  }
+
+  &__icon {
+    fill: none;
+    display: flex;
+    margin-left: rem(-4);
+    width: rem(16);
+    height: rem(16);
+    cursor: pointer;
+    stroke: $gray;
+
+    &--arrow {
+      transform: rotate(-90deg);
+
+      &--back {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &--active {
+    display: flex;
+  }
+}

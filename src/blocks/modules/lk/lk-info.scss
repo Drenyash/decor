@@ -1,0 +1,30 @@
+.lk-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: rem(270);
+  height: min-content;
+  gap: rem(20);
+
+  @include r(1200) {
+    max-width: rem(360);
+  }
+
+  &--grid {
+    display: grid;
+    grid-auto-flow: column;
+    gap: rem(30);
+    max-width: 100%;
+    .final-price {
+      order: 1;
+    }
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: rem(15);
+  }
+}

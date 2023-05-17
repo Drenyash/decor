@@ -1,0 +1,14 @@
+.article-remove {
+  display: flex;
+  justify-content: center;
+  padding: rem(60);
+  width: rem(870);
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: rem(335);
+    text-align: center;
+  }
+}

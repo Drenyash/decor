@@ -1,0 +1,16 @@
+.lk {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    column-gap: rem(130);
+    width: 100%;
+
+    &--short {
+      column-gap: rem(120);
+    }
+  }
+}

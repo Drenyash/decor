@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-60">
+        <div class="container">
+            <div class="lk">
+                <div class="title mb-30 mbm-20 title--lk">Мои заказы</div>
+                <div class="lk__wrapper">
+                    <div class="lk-sidebar">
+                        <nav class="lk-nav">
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-basket"></use>
+                                </svg>
+                                Корзина
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                </svg>
+                                Мои проекты
+                            </a>
+                            <a href="#" class="lk-nav__item lk-nav__item--active">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-orders"></use>
+                                </svg>
+                                Мои заказы
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                                </svg>
+                                Личные данные
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-discount"></use>
+                                </svg>
+                                Бонусная программа
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="lk-content gap-30">
+                        <div class="lk-order lk-order--inner">
+                            <a href="#" class="link-back mbm-10">
+                                <svg class="link-back__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                                </svg>
+                                Назад
+                            </a>
+                            <div class="lk-order__top">
+                                <div class="lk-order__info">
+                                    <h2 class="lk-order__title">Заказ <span>№289300</span></h2>
+                                    <p class="lk-order__date">30 ноября 2022 г.</p>
+                                    <p class="lk-order__status">Ваш заказ обработан менеджером и ожидает оплаты</p>
+                                </div>
+                                <div class="lk-status">
+                                    <svg class="lk-status__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-pay"></use>
+                                    </svg>
+                                    <p class="lk-status__text">Ожидает оплаты</p>
+                                </div>
+                            </div>
+                            <p class="lk-text lk-text--gray lk-text--attention">Вы можете следить за статусом заказа в
+                                личном кабинете, а так же получить информацию о нем по телефону
+                                <a href="tel:+78003070500">8 (800) 3070 500</a></p>
+                        </div>
+                        <div class="lk-content">
+                            <form class="lk-form lk-form--grid">
+                                <fieldset class="lk-form__wrapper">
+                                    <div class="lk-list">
+                                        <article class="lk-product">
+                                            <div class="lk-product__picture">
+                                                <img class="lk-product__picture"
+                                                     src="https://via.placeholder.com/600/92c95"
+                                                     alt="">
+                                                <a class="button button--layout button--layout--left"
+                                                   href="#">
+                                                    <svg class="article-product__icon">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="lk-product__content">
+                                                <div class="lk-product__info">
+                                                    <p class="lk-product__article">Арт. 8252791</p>
+                                                    <h3 class="lk-product__title">Краска finch для стен и потолков 1 л.
+                                                        Черная</h3>
+                                                    <div class="lk-product__value">
+                                                        <div class="price price--row">
+                                                            <p class="price__text price__text--black">7
+                                                                000<span>₽</span></p>
+                                                        </div>
+                                                        <div class="lk-product__count">x <span>2</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="lk-product__controls">
+                                                    <button type="button" class="lk-product__button button button--orange mob-hidden" data-button-open>
+                                                        В проекты
+                                                    </button>
+                                                    <button class="lk-product__button button button--field">
+                                                        В корзину
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article class="lk-product">
+                                            <div class="lk-product__picture">
+                                                <img class="lk-product__picture"
+                                                     src="https://via.placeholder.com/600/92c95"
+                                                     alt="">
+                                                <a class="button button--layout button--layout--left"
+                                                   href="#">
+                                                    <svg class="article-product__icon">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="lk-product__content">
+                                                <div class="lk-product__info">
+                                                    <p class="lk-product__article">Арт. 8252791</p>
+                                                    <h3 class="lk-product__title">Краска finch для стен и потолков 1 л.
+                                                        Черная</h3>
+                                                    <div class="lk-product__value">
+                                                        <div class="price price--row">
+                                                            <p class="price__text price__text--black">7
+                                                                000<span>₽</span></p>
+                                                        </div>
+                                                        <div class="lk-product__count">x <span>2</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="lk-product__controls">
+                                                    <button type="button" class="lk-product__button button button--orange mob-hidden" data-button-open>
+                                                        В проекты
+                                                    </button>
+                                                    <button class="lk-product__button button button--field">
+                                                        В корзину
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article class="lk-product">
+                                            <div class="lk-product__picture">
+                                                <img class="lk-product__picture"
+                                                     src="https://via.placeholder.com/600/92c95"
+                                                     alt="">
+                                                <a class="button button--layout button--layout--left"
+                                                   href="#">
+                                                    <svg class="article-product__icon">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="lk-product__content">
+                                                <div class="lk-product__info">
+                                                    <p class="lk-product__article">Арт. 8252791</p>
+                                                    <h3 class="lk-product__title">Краска finch для стен и потолков 1 л.
+                                                        Черная</h3>
+                                                    <div class="lk-product__value">
+                                                        <div class="price price--row">
+                                                            <p class="price__text price__text--black">7
+                                                                000<span>₽</span></p>
+                                                        </div>
+                                                        <div class="lk-product__count">x <span>2</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="lk-product__controls">
+                                                    <button type="button" class="lk-product__button button button--orange mob-hidden" data-button-open>
+                                                        В проекты
+                                                    </button>
+                                                    <button class="lk-product__button button button--field">
+                                                        В корзину
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="lk-products__control">
+                                        <button class="button button--m button--200">Отменить заказ</button>
+                                        <button class="button button--m button--field button--200">Повторить заказ</button>
+                                    </div>
+                                </fieldset>
+                                <aside class="lk-info">
+                                    <div class="final-price">
+                                        <div class="final-price__top">
+                                            <div class="final-price__text">
+                                                <p>Товары</p>
+                                                <p class="final-price__count">3 шт</p>
+                                            </div>
+                                            <div class="final-price__text">
+                                                <p class="final-price__text--strong">Итого</p>
+                                                <div class="price price--right">
+                                                    <p class="price__text">3 500<span>₽</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="final-price__bottom">
+                                            <button class="button button--field">Оплатить</button>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+
+<div class="popup hide" data-popup>
+    <div class="popup__header">
+        <h2 class="popup__title">Сохранить в «Мои проекты»</h2>
+    </div>
+    <div class="popup__content">
+        <div class="search-box mb-20" data-search-box>
+            <div class="search" data-search>
+                <svg class="search__icon" data-icon>
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                </svg>
+                <input class="search__input" type="search" placeholder="Искать проект" data-search="input">
+            </div>
+        </div>
+        <div class="popup__projects">
+            <div class="popup-project">
+                <p class="popup-project__title">Квартира на Северной Кранодар</p>
+                <div class="popup-project__rooms">
+                    <div class="popup-project__room">
+                        <picture class="popup-project__picture">
+                            <img src="https://via.placeholder.com/50/92c95" alt="">
+                        </picture>
+                        <h3 class="popup-project__text">Спальня девочки  розова</h3>
+                        <button type="button" class="popup-project__button button button--orange">Сохранить</button>
+                    </div>
+                    <div class="popup-project__room">
+                        <picture class="popup-project__picture">
+                            <img src="https://via.placeholder.com/50/92c95" alt="">
+                        </picture>
+                        <h3 class="popup-project__text">Спальня родителей</h3>
+                        <button type="button" class="popup-project__button button button--orange">Сохранить</button>
+                    </div>
+                </div>
+                <a href="#" class="add-project add-project--full" data-fancybox="product" data-src="#modal-room">
+                        <span class="add-project__button">
+                            <svg class="add-project__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                            </svg>
+                        </span>
+                    Добавить комнату
+                </a>
+            </div>
+            <div class="popup-project">
+                <p class="popup-project__title">Квартира на Северной Кранодар</p>
+                <div class="popup-project__rooms">
+                    <div class="popup-project__room">
+                        <picture class="popup-project__picture">
+                            <img src="https://via.placeholder.com/50/92c95" alt="">
+                        </picture>
+                        <h3 class="popup-project__text">Спальня девочки  розова</h3>
+                        <button type="button" class="popup-project__button button button--orange">Сохранить</button>
+                    </div>
+                    <div class="popup-project__room">
+                        <picture class="popup-project__picture">
+                            <img src="https://via.placeholder.com/50/92c95" alt="">
+                        </picture>
+                        <h3 class="popup-project__text">Спальня родителей</h3>
+                        <button type="button" class="popup-project__button button button--orange">Сохранить</button>
+                    </div>
+                </div>
+                <a href="#" class="add-project add-project--full" data-fancybox="product" data-src="#modal-room">
+                        <span class="add-project__button">
+                            <svg class="add-project__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                            </svg>
+                        </span>
+                    Добавить комнату
+                </a>
+            </div>
+            <div class="popup-project">
+                <p class="popup-project__title">Квартира на Северной Кранодар</p>
+                <div class="popup-project__rooms">
+                    <div class="popup-project__room">
+                        <picture class="popup-project__picture">
+                            <img src="https://via.placeholder.com/50/92c95" alt="">
+                        </picture>
+                        <h3 class="popup-project__text">Спальня девочки  розова</h3>
+                        <button type="button" class="popup-project__button button button--orange">Сохранить</button>
+                    </div>
+                    <div class="popup-project__room">
+                        <picture class="popup-project__picture">
+                            <img src="https://via.placeholder.com/50/92c95" alt="">
+                        </picture>
+                        <h3 class="popup-project__text">Спальня родителей</h3>
+                        <button type="button" class="popup-project__button button button--orange">Сохранить</button>
+                    </div>
+                </div>
+                <a href="#" class="add-project add-project--full" data-fancybox="product" data-src="#modal-room">
+                        <span class="add-project__button">
+                            <svg class="add-project__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                            </svg>
+                        </span>
+                    Добавить комнату
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="popup__footer">
+        <a href="#" class="add-project add-project--full" data-fancybox="product" data-src="#modal">
+            <span class="add-project__button">
+                <svg class="add-project__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                </svg>
+            </span>
+            Создать проект
+        </a>
+    </div>
+</div>
+<div class="modal" id="create-project" data-modal data-touch='false'>
+    <div class="modal__content">
+        <article class="modal-project">
+            <form action="#" class="modal-project__form">
+                <h3 class="title mb-30 mbm-20 title--medium">Создание проекта</h3>
+                <div class="modal-project__content mb-30">
+                    <picture class="modal-project__picture">
+                        <img class="modal-project__img" src="../assets/images/logo-empty.png"
+                             alt="Фото каталога 'Краски'">
+                    </picture>
+                    <div class="modal-project__info">
+                        <p class="modal-project__text">Создайте общий проект и наполните <br/> его объектами или
+                            комнатами </p>
+                        <input class="input mb-10" type="text" minlength="3"
+                               placeholder="Название проекта, например, «Квартира №1»">
+                        <label class="button button--icon button--icon--basic">
+                            <input class="hidden" type="file">
+                            <svg class="button__icon button__icon--primary button__icon--medium">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
+                            </svg>
+                            Загрузить обложку
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-project__controls">
+                    <button class="button">Отменить</button>
+                    <button class="button button--field">Создать</button>
+                </div>
+            </form>
+        </article>
+    </div>
+    <div class="modal__close" data-close></div>
+</div>
+<div class="modal" id="modal-room" data-modal data-touch='false'>
+    <div class="modal__content">
+        <article class="modal-project">
+            <form action="#" class="modal-project__form">
+                <h3 class="title mb-30 mbm-20 title--medium">Создание комнаты</h3>
+                <div class="modal-project__content mb-30">
+                    <div class="modal-project__picture modal-project__picture--grid" data-project-pictures>
+                        <img class="modal-project__img" src="https://via.placeholder.com/600/92c66"
+                             alt="Фото каталога 'Краски'">
+                        <img class="modal-project__img" src="https://via.placeholder.com/600/92c66"
+                             alt="Фото каталога 'Краски'">
+                        <img class="modal-project__img" src="https://via.placeholder.com/600/92c66"
+                             alt="Фото каталога 'Краски'">
+                        <img class="modal-project__img" src="https://via.placeholder.com/600/92c66"
+                             alt="Фото каталога 'Краски'">
+                    </div>
+                    <div class="modal-project__info">
+                        <p class="modal-project__text">Добавляйте комнаты к готовому проекту</p>
+                        <input class="input mb-10" type="text" minlength="3"
+                               placeholder="Название проекта, например, «Квартира №1»">
+                        <label class="button button--icon button--icon--basic">
+                            <input class="hidden" type="file">
+                            <svg class="button__icon button__icon--primary button__icon--medium">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
+                            </svg>
+                            Загрузить обложку
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-project__controls">
+                    <button class="button">Отменить</button>
+                    <button class="button button--field">Создать</button>
+                </div>
+            </form>
+        </article>
+    </div>
+    <div class="modal__close" data-close></div>
+</div>
+</body>
+</html>

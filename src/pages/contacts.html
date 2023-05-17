@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <h1 class="title mb-30 mbm-20">Контакты</h1>
+            <div class="contacts">
+                <div class="contacts__header mb-60 mbm-40">
+                    <div class="contacts__el">
+                        <h3 class="title title--small">Клиентская поддержка</h3>
+                        <p class="subtitle">Узнайте наличие товара, выберите время видео-консультации или адрес
+                            ближайшего салона по телефону или написав на почту</p>
+                    </div>
+                    <div class="contacts__el">
+                        <div class="contacts__box contacts__box--row mb-30 mbm-20">
+                            <div class="social social--small">
+                                <a href="#" class="social__link">
+                                    <svg class="social__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-whats"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__link">
+                                    <svg class="social__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-tg"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__link">
+                                    <svg class="social__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-viber"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="contacts__links">
+                                <a href="tel:+78007000090" class="contacts__link">8 800 700-00-99</a>
+                                <a href="mailto:decor@info.ru" class="contacts__link">decor@info.ru</a>
+                            </div>
+                        </div>
+                        <div class="address address--single">
+                            <ul class="address__list">
+                                <li class="address__item">
+                                    <svg class="address__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                    </svg>
+                                    пн-вс: 09:00 – 21:00;<br class="desktop-hidden"/> сб-вс: выходной
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__body">
+                    <div class="contacts__map mob-hidden">
+                        <div style="position:relative;overflow:hidden;"><a
+                                href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a
+                                href="https://yandex.ru/maps/35/krasnodar/house/ulitsa_babushkina_254/Z0EYfwBnS00OQFpvfXx1d39iZA==/?indoorLevel=1&ll=38.978156%2C45.045096&utm_medium=mapframe&utm_source=maps&z=17.09"
+                                style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Бабушкина, 254 —
+                            Яндекс Карты</a>
+                            <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=38.978156%2C45.045096&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozMzAzODcxMTY1EkTQoNC-0YHRgdC40Y8sINCa0YDQsNGB0L3QvtC00LDRgCwg0YPQu9C40YbQsCDQkdCw0LHRg9GI0LrQuNC90LAsIDI1NCIKDb7oG0IVbC80Qg%2C%2C&z=17.09"
+                                    width="560" height="400" frameborder="1" allowfullscreen="true"
+                                    style="position:relative;"></iframe>
+                        </div>
+                    </div>
+                    <div class="contacts__tabs">
+                        <div class="tabs">
+                            <div class="tabs__header">
+                                <ul class="tabs-list">
+                                    <li class="tabs-list__item toggle-tab" data-tab="1">
+                                        <span>Все</span>
+                                    </li>
+                                    <li class="tabs-list__item" data-tab="2">
+                                        <span>Салоны</span>
+                                    </li>
+                                    <li class="tabs-list__item" data-tab="3">
+                                        <span>Диллеры</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tabs__content">
+                                <div class="select-custom mb-30">
+                                    <select class="select-custom__select">
+                                        <option value="default" disabled selected>Выберите город</option>
+                                        <option value="krasnodar">г.Краснодар</option>
+                                        <option value="moscow">г.Москва</option>
+                                        <option value="belaya-glina">ст.Белая Глина</option>
+                                        <option value="krasnodar">г.Краснодар</option>
+                                        <option value="moscow">г.Москва</option>
+                                        <option value="moscow">г.Москва</option>
+                                        <option value="moscow">г.Москва</option>
+                                    </select>
+                                </div>
+                                <div class="contacts__map mbm-20 desktop-hidden">
+                                    <div style="position:relative;overflow:hidden;"><a
+                                            href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps"
+                                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a
+                                            href="https://yandex.ru/maps/35/krasnodar/house/ulitsa_babushkina_254/Z0EYfwBnS00OQFpvfXx1d39iZA==/?indoorLevel=1&ll=38.978156%2C45.045096&utm_medium=mapframe&utm_source=maps&z=17.09"
+                                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Бабушкина, 254 —
+                                        Яндекс Карты</a>
+                                        <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=38.978156%2C45.045096&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozMzAzODcxMTY1EkTQoNC-0YHRgdC40Y8sINCa0YDQsNGB0L3QvtC00LDRgCwg0YPQu9C40YbQsCDQkdCw0LHRg9GI0LrQuNC90LAsIDI1NCIKDb7oG0IVbC80Qg%2C%2C&z=17.09"
+                                                width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                style="position:relative;"></iframe>
+                                    </div>
+                                </div>
+                                <div class="tabs__wrapper">
+                                    <div class="tabs__element tabs__element--max-height active--visible" data-content="1">
+                                        <div class="address">
+                                            <div class="address__wrapper">
+                                                <h3 class="address__title">Салон Европлатст DomDecor</h3>
+                                                <ul class="address__list">
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-pin"></use>
+                                                        </svg>
+                                                        г. Краснодар, ул. Бабушкина, 256
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                                        </svg>
+                                                        пн-вс: 09:00 – 21:00; сб-вс: выходной
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-phone-outline"></use>
+                                                        </svg>
+                                                        +7 (918) 54-51-56
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="address">
+                                            <div class="address__wrapper">
+                                                <h3 class="address__title">Салон Европлатст DomDecor</h3>
+                                                <ul class="address__list">
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-pin"></use>
+                                                        </svg>
+                                                        г. Краснодар, ул. Бабушкина, 256
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                                        </svg>
+                                                        пн-вс: 09:00 – 21:00; сб-вс: выходной
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-phone-outline"></use>
+                                                        </svg>
+                                                        +7 (918) 54-51-56
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="address">
+                                            <div class="address__wrapper">
+                                                <h3 class="address__title">Салон Европлатст DomDecor</h3>
+                                                <ul class="address__list">
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-pin"></use>
+                                                        </svg>
+                                                        г. Краснодар, ул. Бабушкина, 256
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                                        </svg>
+                                                        пн-вс: 09:00 – 21:00; сб-вс: выходной
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-phone-outline"></use>
+                                                        </svg>
+                                                        +7 (918) 54-51-56
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="address">
+                                            <div class="address__wrapper">
+                                                <h3 class="address__title">Салон Европлатст DomDecor</h3>
+                                                <ul class="address__list">
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-pin"></use>
+                                                        </svg>
+                                                        г. Краснодар, ул. Бабушкина, 256
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                                        </svg>
+                                                        пн-вс: 09:00 – 21:00; сб-вс: выходной
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-phone-outline"></use>
+                                                        </svg>
+                                                        +7 (918) 54-51-56
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="address">
+                                            <div class="address__wrapper">
+                                                <h3 class="address__title">Салон Европлатст DomDecor</h3>
+                                                <ul class="address__list">
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-pin"></use>
+                                                        </svg>
+                                                        г. Краснодар, ул. Бабушкина, 256
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                                        </svg>
+                                                        пн-вс: 09:00 – 21:00; сб-вс: выходной
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-phone-outline"></use>
+                                                        </svg>
+                                                        +7 (918) 54-51-56
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="address">
+                                            <div class="address__wrapper">
+                                                <h3 class="address__title">Салон Европлатст DomDecor</h3>
+                                                <ul class="address__list">
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-pin"></use>
+                                                        </svg>
+                                                        г. Краснодар, ул. Бабушкина, 256
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                                        </svg>
+                                                        пн-вс: 09:00 – 21:00; сб-вс: выходной
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-phone-outline"></use>
+                                                        </svg>
+                                                        +7 (918) 54-51-56
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__element tabs__element--max-height hide" data-content="2">
+                                        <div class="address">
+                                            <div class="address__wrapper">
+                                                <h3 class="address__title">Салон Европлатст DomDecor</h3>
+                                                <ul class="address__list">
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-pin"></use>
+                                                        </svg>
+                                                        г. Краснодар, ул. Бабушкина, 256
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                                        </svg>
+                                                        пн-вс: 09:00 – 21:00; сб-вс: выходной
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-phone-outline"></use>
+                                                        </svg>
+                                                        +7 (918) 54-51-56
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="address">
+                                            <div class="address__wrapper">
+                                                <h3 class="address__title">Салон Европлатст DomDecor</h3>
+                                                <ul class="address__list">
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-pin"></use>
+                                                        </svg>
+                                                        г. Краснодар, ул. Бабушкина, 256
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                                        </svg>
+                                                        пн-вс: 09:00 – 21:00; сб-вс: выходной
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-phone-outline"></use>
+                                                        </svg>
+                                                        +7 (918) 54-51-56
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__element tabs__element--max-height hide" data-content="3">
+                                        <div class="address">
+                                            <div class="address__wrapper">
+                                                <h3 class="address__title">Салон Европлатст DomDecor</h3>
+                                                <ul class="address__list">
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-pin"></use>
+                                                        </svg>
+                                                        г. Краснодар, ул. Бабушкина, 256
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                                                        </svg>
+                                                        пн-вс: 09:00 – 21:00; сб-вс: выходной
+                                                    </li>
+                                                    <li class="address__item">
+                                                        <svg class="address__icon">
+                                                            <use xlink:href="./assets/sprite/sprite.svg#icon-phone-outline"></use>
+                                                        </svg>
+                                                        +7 (918) 54-51-56
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.list-sort {
+  display: flex;
+
+  &__text {
+    padding: rem(10);
+    font-size: rem(16);
+    line-height: rem(19);
+    font-weight: 500;
+    color: $active;
+    cursor: pointer;
+    transition: all .3s linear;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__input:checked ~ &__text {
+    text-decoration: underline;
+    color: #000000;
+  }
+}

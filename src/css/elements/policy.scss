@@ -1,0 +1,18 @@
+.policy {
+  font-weight: 500;
+  font-size: rem(12);
+  line-height: rem(18);
+  color: #757575;
+
+  a,
+  span {
+    color: black;
+  }
+
+  a {
+    transition: .3s linear;
+    &:hover {
+      opacity: .7;
+    }
+  }
+}

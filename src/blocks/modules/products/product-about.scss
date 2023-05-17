@@ -1,0 +1,25 @@
+.product-about {
+  padding-top: rem(20);
+
+  @include r(1200) {
+    padding-top: rem(0);
+  }
+  &__title {
+    margin-bottom: rem(30);
+    font-weight: 600;
+    font-size: rem(24);
+    line-height: rem(29);
+    color: #090909;
+
+    @include r(1200) {
+      display: none;
+    }
+  }
+  &__text {
+    color: $active;
+    @include r(1200) {
+      font-size: rem(14);
+      line-height: rem(17);
+    }
+  }
+}

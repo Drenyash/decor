@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <h1 class="title mb-30 mbm-20">Услуги</h1>
+            <div class="services-page">
+                <div class="grid-services mb-105">
+                    <div class="grid__item">
+                        <article class="article-services">
+                            <svg class="article-services__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-phone-video"></use>
+                            </svg>
+                            <div class="article-services__info">
+                                <h3 class="article-services__title">Видео-консультация</h3>
+                                <p class="article-services__text">Оформите доставку на нашем сайте по всей России и мы
+                                    доставим
+                                    ваш груз в целостности и сохранности</p>
+                            </div>
+                            <a href="./servicesTrans.html" class="button button--field">Узнать больше</a>
+                        </article>
+                    </div>
+                    <div class="grid__item">
+                        <article class="article-services">
+                            <svg class="article-services__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-trans"></use>
+                            </svg>
+                            <div class="article-services__info">
+                                <h3 class="article-services__title">Доставка</h3>
+                                <p class="article-services__text">Оформите доставку на нашем сайте по всей России и мы
+                                    доставим
+                                    ваш груз в целостности и сохранности</p>
+                            </div>
+                            <a href="./servicesTrans.html" class="button button--field">Узнать больше</a>
+                        </article>
+                    </div>
+                    <div class="grid__item">
+                        <article class="article-services">
+                            <svg class="article-services__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-coler"></use>
+                            </svg>
+                            <div class="article-services__info">
+                                <h3 class="article-services__title">Колеровка</h3>
+                                <p class="article-services__text">Мы подберем для вас идеальный цвет. Таким образом,
+                                    наши клиенты всегда могут получить желаемый оттенок!</p>
+                            </div>
+                            <a href="./servicesTrans.html" class="button button--field">Узнать больше</a>
+                        </article>
+                    </div>
+                    <div class="grid__item">
+                        <article class="article-services">
+                            <svg class="article-services__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-size"></use>
+                            </svg>
+                            <div class="article-services__info">
+                                <h3 class="article-services__title">Замеры</h3>
+                                <p class="article-services__text">га, способная дать максимально полные данные о
+                                    необходимом количестве строительных материалов</p>
+                            </div>
+                            <a href="./servicesTrans.html" class="button button--field">Узнать больше</a>
+                        </article>
+                    </div>
+                </div>
+                <div class="feedback mb-100">
+                    <div class="feedback__wrapper feedback__wrapper--text">
+                        <h2 class="feedback__title">Нет интересующей вас услуги?</h2>
+                        <p class="feedback__text">Оставьте свои данные и запрос на услугу, мы свяжемся с вами в
+                            ближайшее время</p>
+                    </div>
+                    <div class="feedback__wrapper">
+                        <form class="feedback__form form" action="#" method="POST" data-form="1">
+                            <fieldset class="form__wrapper">
+                                <input
+                                        class="input input--fill"
+                                        type="text"
+                                        name="name"
+                                        minlength="3"
+                                        placeholder="Имя"
+                                        required
+                                        data-input="name"
+                                >
+                                <input
+                                        class="input input--fill"
+                                        type="tel"
+                                        name="phone"
+                                        placeholder="Телефон"
+                                        pattern="[0-9]{3}[0-9]{3}[0-9]{5}"
+                                        required
+                                        data-input="phone"
+                                >
+                            </fieldset>
+                            <textarea
+                                    class="input input--area input--fill"
+                                    name="question"
+                                    placeholder="Ваш вопрос"
+                                    required
+                                    data-input="textarea"
+                            ></textarea>
+                            <fieldset class="form__wrapper form__wrapper-policy">
+                                <button
+                                        type="submit"
+                                        class="form__button button button--middle button--field"
+                                        data-form="submit"
+                                >Отправить
+                                </button>
+                                <div class="form__policy">
+                                    <label class="filter-checkbox filter-checkbox--policy">
+                                        <input class="hidden" type="checkbox" name="brand" value="evroplast">
+                                        <span class="checkbox">
+                                            <svg>
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="filter-checkbox__info">
+                                        Cогласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a>
+                                    </span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <p class="form__accepted" data-accept="1"><span>Успешно!</span> ваше сообщение отправлено
+                            </p>
+                        </form>
+                    </div>
+                    <svg class="feedback__icon feedback__icon_orange">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-vector-orange"></use>
+                    </svg>
+                    <svg class="feedback__icon feedback__icon_blue">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-vector-blue"></use>
+                    </svg>
+                </div>
+                <div class="text text--small">
+                    <p>
+                        Сервисы магазинов – широкий ассортимент товаров для строительства, ремонта и обустройства дома в
+                        розничных магазинах и интернет-магазине Леруа Мерлен Краснодара. Подберите нужный товар в нашем
+                        каталоге или загляните в ближайший гипермаркет Леруа Мерлен!
+                    </p>
+                    <p>
+                        Леруа Мерлен предлагает широкий выбор товаров по низким ценам для жителей Краснодарского края,
+                        таких
+                        как Анапа, Анапская, Апшеронск, Армавир, Архипо-Осиповка, Афипский, Ахтырский, Белая Глина,
+                        Белореченск, Брюховецкая, Варениковская, Витязево, Выселки, Геленджик, Горячий Ключ,
+                        Гостагаевская,
+                        Гулькевичи, Джубга, Дивноморское, Динская, Ейск, Елизаветинская, Ильский, Кабардинка,
+                        Калининская,
+                        Каневская, Кореновск, Красная Поляна, Краснодар, Кропоткин, Крыловская, Курганинск, Кущёвская,
+                        Лабинск, Лазаревское, Ленинградская, Лорис, Майкоп, Медведовская, Мостовской, Мысхако,
+                        Натухаевская,
+                        Новокубанск, Новомихайловский, Новомышастовская, Новопокровская, Новотитаровская, Октябрьская,
+                        Отрадная, Павловская, Пластуновская, Полтавская, Приморско-Ахтарск, Раевская, Северская,
+                        Славянск-на-Кубани, Смоленская, Совхозный, Сочи, Старокорсунская станица, Староминская, Супсех,
+                        Тамань, Тбилисская, Темрюк, Тимашёвск, Тихорецк, Трудобеликовский, Туапсе, Усть-Лабинск,
+                        Хадыженск,
+                        Хутор Ленина, Цемдолина, Южный. Вы можете заказать необходимые товары онлайн с доставкой во все
+                        эти
+                        города или посетить один из наших розничных магазинов.
+                    </p>
+                    <p>
+                        Подробную информацию о магазинах Леруа Мерлен в Краснодаре и ассортименте продукции Вы найдете
+                        на
+                        нашем сайте. Также Вы можете посетить наши гипермаркеты в Краснодаре и получить подробные
+                        консультации по интересующим Вас вопросам непосредственно у наших специалистов.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

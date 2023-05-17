@@ -1,0 +1,9 @@
+.dropdown-header {
+  position: absolute;
+  top: 120px;
+  display: flex;
+  width: 100%;
+  @include r(1200) {
+    top: 60px;
+  }
+}

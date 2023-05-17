@@ -1,0 +1,23 @@
+.link-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  color: #AAAAAA;
+  transition: .3s linear;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &__icon {
+    fill: none;
+    display: flex;
+    margin-left: rem(-4);
+    width: rem(16);
+    height: rem(16);
+    cursor: pointer;
+    stroke: $gray;
+    transform: rotate(90deg);
+  }
+}

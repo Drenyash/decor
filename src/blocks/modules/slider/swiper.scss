@@ -1,0 +1,21 @@
+.swiper {
+  &-wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  &-slide {
+    flex-shrink: 0;
+    transition: opacity .2s ease-out;
+
+    &-active {
+      opacity: 1;
+    }
+  }
+  &-horizontal {
+    touch-action: pan-y;
+  }
+  &-vertical {
+    touch-action: pan-x;
+  }
+}

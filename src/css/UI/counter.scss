@@ -1,0 +1,44 @@
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(8) rem(15);
+  width: 100%;
+  max-width: rem(170);
+  border: 1px solid $gray;
+  border-radius: rem(6);
+  overflow: hidden;
+
+  &--small {
+    padding-left: 0;
+    padding-right: 0;
+    border-color: $light;
+  }
+
+  &__value {
+    font-size: rem(16);
+    line-height: rem(19);
+    font-weight: 600;
+    color: $black-light;
+  }
+
+  &__icon {
+    width: rem(18);
+    height: rem(18);
+    fill: $primary;
+  }
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(5) rem(10);
+
+    &:hover {
+      .counter__icon {
+        fill: $active;
+      }
+    }
+  }
+}

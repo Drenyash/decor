@@ -1,0 +1,78 @@
+.form-filter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+    padding: rem(20) 0 rem(21);
+    border-bottom: rem(1) solid $light;
+
+    &--open {
+      .form-filter__body {
+        position: static;
+        height: 100%;
+      }
+
+      .form-filter__title::before {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &__body {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    column-gap: rem(10);
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(18);
+    cursor: pointer;
+    transition: all .3s linear;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: rem(14);
+      height: rem(14);
+      background-image: url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_501_9216)'%3E%3Cpath d='M13.8667 0.94725L13.1111 0.141987C12.8889 -0.0948551 12.5778 -0.0948551 12.3556 0.141987L6.97778 5.87357L6.97778 8.99988L13.8667 1.70514C14.0444 1.51567 14.0444 1.13672 13.8667 0.94725Z' fill='%2375A3BC'/%3E%3Cpath d='M0.888641 0.142105L0.17753 0.947368C-0.0446925 1.18421 -0.0446925 1.51579 0.17753 1.75263L7.02197 9L7.02197 5.87368L1.6442 0.142105C1.42197 -0.0473687 1.11086 -0.0473687 0.888641 0.142105Z' fill='%2375A3BC'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_501_9216'%3E%3Crect width='9' height='14' fill='white' transform='translate(14) rotate(90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(18);
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(30);
+  }
+
+  &__button {
+    padding: rem(12) rem(21);
+    max-width: rem(124);
+    width: 100%;
+    text-align: center;
+  }
+}

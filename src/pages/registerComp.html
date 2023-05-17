@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <div class="auth">
+                <a href="#" class="link-back mb-30 mbm-20">
+                    <svg class="link-back__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                    Назад
+                </a>
+                <h2 class="auth__title title title--medium">Регистрация компании</h2>
+                <form action="#" class="auth-form mb-20" data-form>
+                    <fieldset class="auth-form__wrapper">
+                        <input type="text" class="input input--light" minlength="3" placeholder="ИНН" name="company-inn"
+                               required data-input>
+                        <input type="text" class="input input--light" minlength="3" placeholder="ФИО контактного лица"
+                               name="company-fio" required data-input>
+                        <input type="tel" class="input input--light" minlength="6" placeholder="Телефон"
+                               name="company-phone" pattern="[0-9]{3}[0-9]{3}[0-9]{5}" required data-input>
+                        <input type="text" class="input input--light" minlength="3" placeholder="Город"
+                               name="company-city"
+                               required data-input>
+                        <input type="password" class="input input--light" minlength="3" placeholder="Пароль"
+                               name="company-password" required data-input>
+                        <input type="password" class="input input--light" minlength="3"
+                               placeholder="Подтверждение пароля"
+                               name="company-password-accept" required data-input>
+                    </fieldset>
+                    <button class="button button--field button--full-size-m">Зарегистрироваться</button>
+                </form>
+                <p class="policy">Нажимая на кнопку «Зарегистрироваться», я даю <span>согласие</span> на обработку
+                    персональных
+                    данных, в соответствие с <a href="#">политикой конфиденциальности</a>, и соглашаюсь с правилами</p>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

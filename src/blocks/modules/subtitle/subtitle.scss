@@ -1,0 +1,20 @@
+.subtitle {
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: rem(21);
+  color: $active;
+
+  &--black {
+    color: $black-light;
+  }
+
+  &--strong {
+    font-weight: 600;
+    color: $black-light;
+  }
+
+  &--small {
+    font-size: rem(14);
+    color: $black-light;
+  }
+}

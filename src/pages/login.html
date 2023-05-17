@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <div class="auth">
+                <h2 class="auth__title title title--medium">Авторизация</h2>
+                <form action="#" class="auth-form" data-form>
+                    <fieldset class="auth-form__wrapper">
+                        <input type="text" class="input input--light" minlength="3" placeholder="Логин"
+                               name="login-login" required data-input>
+                        <input type="password" class="input input--light" minlength="3" placeholder="Пароль"
+                               name="login-password" required data-input>
+                    </fieldset>
+                    <div class="auth-form__footer">
+                        <button class="button button--field">Войти</button>
+                        <div class="auth-form__links">
+                            <a href="#">Забыли пароль?</a>
+                            <a href="#">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

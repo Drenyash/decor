@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <div class="lk">
+                <div class="title mb-30 mbm-20 mob-hidden">Мои проекты</div>
+                <div class="lk__wrapper">
+                    <div class="lk-sidebar">
+                        <nav class="lk-nav">
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-basket"></use>
+                                </svg>
+                                Корзина
+                            </a>
+                            <a href="#" class="lk-nav__item lk-nav__item--active">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                </svg>
+                                Мои проекты
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-orders"></use>
+                                </svg>
+                                Мои заказы
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                                </svg>
+                                Личные данные
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-discount"></use>
+                                </svg>
+                                Бонусная программа
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="lk-content">
+                        <a href="#" class="link-back mb-30">
+                            <svg class="link-back__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+                            </svg>
+                            Назад
+                        </a>
+                        <div class="lk-content__top mb-40 mbm-30">
+                            <h2 class="lk-title mb-30 mbm-20">Квартира ЖК «Тургенев»</h2>
+                            <p class="lk-content__id">id 8252791</p>
+                        </div>
+                        <div class="lk-content__wrapper lk-content__wrapper--grid lk-content__wrapper--reversed-m mb-60 mbm-30">
+                            <div>
+                                <div class="lk-comment mb-30">
+                                    <textarea class="lk-comment__area"
+                                              placeholder="Комментарий к квартире, например, «высота потолков, кв. м»"
+                                              data-area></textarea>
+                                    <div class="lk-comment__control">
+                                        <input type="checkbox" class="lk-comment__input">
+                                        <button class="lk-comment__info">
+                                            <svg class="lk-comment__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-info"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="lk-grid lk-grid--2">
+                                    <div class="lk-grid__item">
+                                        <article class="article-project">
+                                            <div class="article-project__picture">
+                                                <img class="article-catalog__img"
+                                                     src="https://via.placeholder.com/600/92c66"
+                                                     alt="Фото каталога 'Краски'">
+                                                <button class="article-project__edit edit-button">
+                                                    <svg class="edit-button__icon">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-pen"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="article-project__footer">
+                                                <div class="article-project__info">
+                                                    <p class="article-project__text">5 товаров</p>
+                                                    <h3 class="article-project__title">Прихожая</h3>
+                                                </div>
+                                                <button class="button button--basket">
+                                                    <svg class="button__icon">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="lk-grid__item">
+                                        <article class="article-project">
+                                            <div class="article-project__picture">
+                                                <img class="article-catalog__img"
+                                                     src="https://via.placeholder.com/600/92c66"
+                                                     alt="Фото каталога 'Краски'">
+                                                <button class="article-project__edit edit-button">
+                                                    <svg class="edit-button__icon">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-pen"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="article-project__footer">
+                                                <div class="article-project__info">
+                                                    <p class="article-project__text">5 товаров</p>
+                                                    <h3 class="article-project__title">Прихожая</h3>
+                                                </div>
+                                                <button class="button button--basket">
+                                                    <svg class="button__icon">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="lk-grid__item">
+                                        <article class="article-project">
+                                            <div class="article-project__picture">
+                                                <img class="article-catalog__img"
+                                                     src="https://via.placeholder.com/600/92c66"
+                                                     alt="Фото каталога 'Краски'">
+                                                <button class="article-project__edit edit-button">
+                                                    <svg class="edit-button__icon">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-pen"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="article-project__footer">
+                                                <div class="article-project__info">
+                                                    <p class="article-project__text">5 товаров</p>
+                                                    <h3 class="article-project__title">Спальня</h3>
+                                                </div>
+                                                <button class="button button--basket">
+                                                    <svg class="button__icon">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="lk-grid__item">
+                                        <article class="article-project">
+                                            <div class="article-project__picture">
+                                                <img class="article-catalog__img"
+                                                     src="https://via.placeholder.com/600/92c66"
+                                                     alt="Фото каталога 'Краски'">
+                                                <button class="article-project__edit edit-button">
+                                                    <svg class="edit-button__icon">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-pen"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="article-project__footer">
+                                                <div class="article-project__info">
+                                                    <p class="article-project__text">5 товаров</p>
+                                                    <h3 class="article-project__title">Кухня</h3>
+                                                </div>
+                                                <button class="button button--basket">
+                                                    <svg class="button__icon">
+                                                        <use xlink:href="./assets/sprite/sprite.svg#icon-trash"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="add-project" data-fancybox="product" data-src="#modal-room">
+                                    <span class="add-project__button">
+                                        <svg class="add-project__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                    </span>
+                                Создать комнату
+                            </a>
+                        </div>
+                        <aside class="lk-info">
+                            <a href="#" class="link-file">
+                                <svg class="link-file__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-file-pdf"></use>
+                                </svg>
+                                <p class="link-file__text">
+                                    Сформировать КП.pdf
+                                    <span class="link-file__link">Скачать</span>
+                                </p>
+                            </a>
+                            <label class="filter-checkbox mbm-10">
+                                <input class="hidden" type="checkbox" name="add-contacts">
+                                <span class="checkbox">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                    </svg>
+                                </span>
+                                <span class="filter-checkbox__info">Добавить контакты из личного кабинета</span>
+                            </label>
+                            <div class="attention">
+                                <div class="attention__top">
+                                    <svg class="attention__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-attention"></use>
+                                    </svg>
+                                    <p class="attention__text">Внимание!</p>
+                                </div>
+                                <p class="attention__text">При формировании КП будут указаны розничные цены без учета
+                                    скидки </p>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+<div class="modal" id="modal-room" data-modal data-touch='false'>
+    <div class="modal__content">
+        <article class="modal-project">
+            <form action="#" class="modal-project__form">
+                <h3 class="title mb-30 mbm-20 title--medium">Создание комнаты</h3>
+                <div class="modal-project__content mb-30">
+                    <div class="modal-project__picture modal-project__picture--grid" data-project-pictures>
+                        <img class="modal-project__img" src="https://via.placeholder.com/600/92c66"
+                             alt="Фото каталога 'Краски'">
+                        <img class="modal-project__img" src="https://via.placeholder.com/600/92c66"
+                             alt="Фото каталога 'Краски'">
+                        <img class="modal-project__img" src="https://via.placeholder.com/600/92c66"
+                             alt="Фото каталога 'Краски'">
+                        <img class="modal-project__img" src="https://via.placeholder.com/600/92c66"
+                             alt="Фото каталога 'Краски'">
+                    </div>
+                    <div class="modal-project__info">
+                        <p class="modal-project__text">Добавляйте комнаты к готовому проекту</p>
+                        <input class="input" type="text" minlength="3"
+                               placeholder="Название проекта, например, «Квартира №1»">
+                        <label class="button button--icon button--icon--basic">
+                            <input class="hidden" type="file">
+                            <svg class="button__icon button__icon--primary button__icon--medium">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
+                            </svg>
+                            Загрузить обложку
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-project__controls">
+                    <button class="button">Отменить</button>
+                    <button class="button button--field">Создать</button>
+                </div>
+            </form>
+        </article>
+    </div>
+    <div class="modal__close" data-close></div>
+</div>
+</body>
+</html>

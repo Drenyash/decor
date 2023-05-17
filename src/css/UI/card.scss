@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  column-gap: rem(10);
+  padding: rem(20);
+  border: 2px solid transparent;
+  outline: 1px solid #A2A2A2;
+  outline-offset: -1px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all .3s linear;
+
+  @include hover;
+
+  &:has(input:checked) {
+    border: 2px solid #000;
+    outline: none;
+  }
+
+  &:has(input:checked) ~ .auth-form__footer > button {
+    pointer-events: auto;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(10);
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 17px;
+    color: $black-dark;
+
+    &--bold {
+      font-size: rem(16);
+      line-height: 19px;
+    }
+  }
+}

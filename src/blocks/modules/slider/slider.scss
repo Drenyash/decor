@@ -1,0 +1,137 @@
+.slider {
+  position: relative;
+
+  &__wrapper--mobile {
+    @include r(572) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(rem(130), 1fr));
+      gap: rem(30) rem(10);
+      .slider__item {
+        opacity: 1;
+
+        &:nth-child(n+5) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    &--intro {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      width: 1170px
+    }
+
+    &--blog {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      width: 700px;
+      .slider__button--prev {
+        top: 50%;
+        left: 0;
+      }
+      .slider__button--next {
+        top: 50%;
+        right: 0;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    opacity: 0;
+
+    &--visible {
+      opacity: 1;
+    }
+
+    &--field {
+      min-width: 100%;
+    }
+  }
+
+  &__pagination {
+    position: absolute;
+    bottom: rem(-30);
+    display: flex;
+    justify-content: center;
+    column-gap: rem(10);
+    width: 100%;
+    z-index: 99;
+
+    &-bullet {
+      width: rem(10);
+      height: rem(10);
+      border: 1px solid $primary;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &--active {
+        background-color: $primary;
+      }
+    }
+  }
+
+  &[data-slider="catalog"] {
+    .slider__button {
+      top: 50%;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(46);
+    height: rem(46);
+    background-color: $white;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: opacity .2s linear;
+
+    &--middle {
+      top: 47%;
+    }
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &--gray {
+      background-color: $light;
+    }
+
+    svg {
+      fill: none;
+      width: rem(8);
+      height: rem(18);
+    }
+
+    @include r(1200) {
+      display: none;
+    }
+  }
+
+  &__button--prev {
+    left: rem(-66);
+  }
+
+  &__button--next {
+    right: rem(-66);
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  &__button--disabled {
+    opacity: .3;
+  }
+}

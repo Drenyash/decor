@@ -1,0 +1,13 @@
+.lk-status {
+  display: flex;
+  align-items: center;
+  column-gap: rem(10);
+  &__icon {
+    fill: none;
+    width: rem(20);
+    height: rem(20);
+  }
+  &_text {
+    color: #757575;
+  }
+}

@@ -1,0 +1,7 @@
+.blog {
+  &__item--flex {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: rem(30);
+  }
+}

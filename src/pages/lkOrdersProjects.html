@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-60">
+        <div class="container">
+            <div class="lk">
+                <div class="title mb-30 mbm-20 title--lk">Мои заказы</div>
+                <div class="lk__wrapper">
+                    <div class="lk-sidebar">
+                        <nav class="lk-nav">
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-basket"></use>
+                                </svg>
+                                Корзина
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+                                </svg>
+                                Мои проекты
+                            </a>
+                            <a href="#" class="lk-nav__item lk-nav__item--active">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-orders"></use>
+                                </svg>
+                                Мои заказы
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                                </svg>
+                                Личные данные
+                            </a>
+                            <a href="#" class="lk-nav__item">
+                                <svg class="lk-icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-discount"></use>
+                                </svg>
+                                Бонусная программа
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="lk-content">
+                        <div class="lk-content__wrapper">
+                            <a href="./lkOrdersProjectPage.html" class="lk-order lk-order--index outline">
+                                <div class="lk-order__top">
+                                    <div class="lk-order__info">
+                                        <h3 class="lk-order__number">№ 289300</h3>
+                                        <p class="lk-order__date lk-order__date--back">30 ноября 2022 г.</p>
+                                    </div>
+                                    <div class="lk-status lk-status--dangerous">
+                                        <svg class="lk-status__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-dangerous-close"></use>
+                                        </svg>
+                                        <p class="lk-status__text">Отменен</p>
+                                    </div>
+                                </div>
+                                <div class="lk-order__content">
+                                    <div class="lk-order__count">13 товаров</div>
+                                    <div class="price price--black">
+                                        <p class="price__text price__text--small-m">12 350<span>₽</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./lkOrdersProjectPage.html" class="lk-order lk-order--index outline">
+                                <div class="lk-order__top">
+                                    <div class="lk-order__info">
+                                        <h3 class="lk-order__number">№ 289300</h3>
+                                        <p class="lk-order__date lk-order__date--back">30 ноября 2022 г.</p>
+                                    </div>
+                                    <div class="lk-status">
+                                        <svg class="lk-status__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-wait"></use>
+                                        </svg>
+                                        <p class="lk-status__text">В обработке</p>
+                                    </div>
+                                </div>
+                                <div class="lk-order__content">
+                                    <div class="lk-order__count">13 товаров</div>
+                                    <div class="price price--black">
+                                        <p class="price__text price__text--small-m">12 350<span>₽</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./lkOrdersProjectPage.html" class="lk-order lk-order--index outline">
+                                <div class="lk-order__top">
+                                    <div class="lk-order__info">
+                                        <h3 class="lk-order__number">№ 289300</h3>
+                                        <p class="lk-order__date lk-order__date--back">30 ноября 2022 г.</p>
+                                    </div>
+                                    <div class="lk-status">
+                                        <svg class="lk-status__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-pay"></use>
+                                        </svg>
+                                        <p class="lk-status__text">Ожидает оплаты</p>
+                                    </div>
+                                </div>
+                                <div class="lk-order__content">
+                                    <div class="lk-order__count">13 товаров</div>
+                                    <div class="price price--black">
+                                        <p class="price__text price__text--small-m">12 350<span>₽</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./lkOrdersProjectPage.html" class="lk-order lk-order--index outline">
+                                <div class="lk-order__top">
+                                    <div class="lk-order__info">
+                                        <h3 class="lk-order__number">№ 289300</h3>
+                                        <p class="lk-order__date lk-order__date--back">30 ноября 2022 г.</p>
+                                    </div>
+                                    <div class="lk-status">
+                                        <svg class="lk-status__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-order"></use>
+                                        </svg>
+                                        <p class="lk-status__text">Сборка заказа</p>
+                                    </div>
+                                </div>
+                                <div class="lk-order__content">
+                                    <div class="lk-order__count">13 товаров</div>
+                                    <div class="price price--black">
+                                        <p class="price__text price__text--small-m">12 350<span>₽</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./lkOrdersProjectPage.html" class="lk-order lk-order--index outline">
+                                <div class="lk-order__top">
+                                    <div class="lk-order__info">
+                                        <h3 class="lk-order__number">№ 289300</h3>
+                                        <p class="lk-order__date lk-order__date--back">30 ноября 2022 г.</p>
+                                    </div>
+                                    <div class="lk-status">
+                                        <svg class="lk-status__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-success"></use>
+                                        </svg>
+                                        <p class="lk-status__text">Завершён</p>
+                                    </div>
+                                </div>
+                                <div class="lk-order__content">
+                                    <div class="lk-order__count">13 товаров</div>
+                                    <div class="price price--black">
+                                        <p class="price__text price__text--small-m">12 350<span>₽</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

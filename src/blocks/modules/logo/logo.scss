@@ -1,0 +1,18 @@
+.logo {
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+    transition: .3s linear;
+  }
+
+  &__icon {
+    fill: none;
+    width: rem(224);
+    height: rem(33);
+    @include r(1200) {
+      max-height: rem(23);
+    }
+  }
+}

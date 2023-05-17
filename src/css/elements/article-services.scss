@@ -1,0 +1,37 @@
+.article-services {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: rem(40);
+  background-color: $light;
+  border-radius: rem(6);
+
+  &--slim {
+    padding: 0;
+  }
+
+  &__icon {
+    margin-bottom: rem(20);
+    width: rem(80);
+    height: rem(80);
+  }
+
+  &__title {
+    font-size: rem(18);
+    line-height: rem(22);
+    font-weight: 700;
+    color: $black-light;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: rem(30);
+  }
+
+  &__text {
+    font-size: rem(16);
+    color: $gray;
+  }
+}

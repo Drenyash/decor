@@ -1,0 +1,17 @@
+.footer {
+  padding: rem(49) 0 rem(46);
+  background-color: $light;
+
+  @include r(1200) {
+    padding: rem(40) 0;
+  }
+
+  &__phone {
+    font-size: rem(14);
+    line-height: rem(22);
+    font-weight: 600;
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <div class="auth auth--full auth--center center">
+                <svg class="icon icon--accept">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-accept"></use>
+                </svg>
+                <h2 class="auth__title title title--medium title--small-m">Пароль успешно изменён</h2>
+                <button class="button button--full-size-m button--field">Войти</button>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

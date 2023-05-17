@@ -1,0 +1,30 @@
+.services-page {
+  &__grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: rem(64);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: rem(736);
+    min-width: rem(360);
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .title {
+      margin-bottom: rem(20);
+    }
+
+    &--info {
+      max-width: rem(370);
+    }
+  }
+}
